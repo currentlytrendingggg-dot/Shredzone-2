@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shredzone - Enter the Zone. Leave the Excuses.</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Left: Logo and Brand -->
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <img src="Media/Logo.png" alt="Shredzone Logo" class="logo">
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-name">SHREDZONE</h1>
+                    <p class="brand-slogan">Enter the Zone. Leave the Excuses.</p>
+                </div>
+            </div>
+
+            <!-- Center: Navigation Menu -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="bmi.html" class="nav-link dropdown-toggle">
+                            Calculators
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bmi.html" class="dropdown-link">BMI Calculator</a></li>
+                            <li><a href="bms.html" class="dropdown-link">BMR Calculator</a></li>
+                            <li><a href="calories.html" class="dropdown-link">Calorie Planner</a></li>
+                            <li><a href="diet.html" class="dropdown-link">Diet Chart Generator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: Social Media Icons -->
+            <div class="nav-social">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Advanced Image/Video Slider -->
+        <section class="slider-section">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <!-- Slide 1: Video -->
+                    <div class="slide active" data-slide="1">
+                        <div class="slide-content">
+                            <video class="slide-video" autoplay muted loop playsinline>
+                                <source src="Media/Slider 1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="slide-overlay">
+                                <div class="slide-text">
+                                    <h2 class="slide-title">Transform Your Fitness Journey</h2>
+                                    <p class="slide-description">Experience the power of Shredzone with our comprehensive fitness solutions</p>
+                                    <button class="slide-btn">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Image -->
+                    <div class="slide" data-slide="2">
+                        <div class="slide-content">
+                            <img src="Media/Slider 2.png" alt="Fitness Training" class="slide-image">
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Image -->
+                    <div class="slide" data-slide="3">
+                        <div class="slide-content">
+                            <img src="Media/Slider 3.png" alt="Nutrition & Diet" class="slide-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="slider-nav prev" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-nav next" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Dots Indicator -->
+                <div class="slider-dots">
+                    <button class="dot active" data-slide="1" aria-label="Go to slide 1"></button>
+                    <button class="dot" data-slide="2" aria-label="Go to slide 2"></button>
+                    <button class="dot" data-slide="3" aria-label="Go to slide 3"></button>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="slider-progress">
+                    <div class="progress-bar"></div>
+                </div>
+
+                <!-- Play/Pause Button -->
+                <button class="slider-play-pause" aria-label="Play/Pause slider">
+                    <i class="fas fa-pause"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Advanced About Section -->
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <!-- Section Header -->
+                <div class="about-header">
+                    <h2 class="about-title">About Shredzone</h2>
+                    <p class="about-subtitle">Enter the Zone. Leave the Excuses.</p>
+                </div>
+
+                <!-- Main About Content -->
+                <div class="about-content">
+                    <!-- Left Side: Text Content -->
+                    <div class="about-text">
+                        <div class="about-intro">
+                            <h3 class="about-intro-title">Transforming Lives Through Fitness</h3>
+                            <p class="about-intro-text">
+                                At Shredzone, we believe that fitness is not just about physical transformation, 
+                                but about unlocking your true potential. Our comprehensive platform combines 
+                                cutting-edge technology with proven methodologies to deliver results that 
+                                exceed expectations.
+                            </p>
+                        </div>
+
+                        <div class="about-details" id="about-details">
+                            <div class="about-detail-item">
+                                <div class="detail-icon">
+                                    <i class="fas fa-dumbbell"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <h4>Personalized Training</h4>
+                                    <p>Custom workout plans tailored to your fitness level, goals, and lifestyle preferences.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-detail-item">
+                                <div class="detail-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <h4>Progress Tracking</h4>
+                                    <p>Advanced analytics and real-time progress monitoring to keep you motivated and on track.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-detail-item">
+                                <div class="detail-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <h4>Expert Community</h4>
+                                    <p>Connect with certified trainers and like-minded individuals on their fitness journey.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-detail-item">
+                                <div class="detail-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <h4>Mobile-First Design</h4>
+                                    <p>Access your workouts, track progress, and stay connected anywhere, anytime.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-read-more">
+                            <button class="read-more-btn" id="read-more-btn">
+                                <span class="btn-text">Read More</span>
+                                <i class="fas fa-chevron-down btn-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Infographics -->
+                    <div class="about-infographics">
+                        <div class="infographic-grid">
+                            <!-- Stats Cards -->
+                            <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                                <div class="stat-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="stat-number" data-target="50000">0</div>
+                                <div class="stat-label">Happy Members</div>
+                            </div>
+
+                            <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                                <div class="stat-icon">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <div class="stat-number" data-target="1000000">0</div>
+                                <div class="stat-label">Calories Burned</div>
+                            </div>
+
+                            <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                                <div class="stat-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="stat-number" data-target="24">0</div>
+                                <div class="stat-label">Hours Support</div>
+                            </div>
+
+                            <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                                <div class="stat-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="stat-number" data-target="98">0</div>
+                                <div class="stat-label">Success Rate %</div>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bars -->
+                        <div class="progress-section">
+                            <h4 class="progress-title">Our Expertise</h4>
+                            <div class="progress-bars">
+                                <div class="progress-item">
+                                    <div class="progress-label">
+                                        <span>Personal Training</span>
+                                        <span class="progress-percentage">95%</span>
+                                    </div>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar-fill" data-width="95"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-item">
+                                    <div class="progress-label">
+                                        <span>Nutrition Guidance</span>
+                                        <span class="progress-percentage">92%</span>
+                                    </div>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar-fill" data-width="92"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-item">
+                                    <div class="progress-label">
+                                        <span>Technology Integration</span>
+                                        <span class="progress-percentage">98%</span>
+                                    </div>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar-fill" data-width="98"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-item">
+                                    <div class="progress-label">
+                                        <span>Customer Satisfaction</span>
+                                        <span class="progress-percentage">96%</span>
+                                    </div>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar-fill" data-width="96"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mission Statement -->
+                <div class="mission-section">
+                    <div class="mission-content">
+                        <div class="mission-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="mission-text">
+                            <h3>Our Mission</h3>
+                            <p>To empower individuals to achieve their fitness goals through innovative technology, 
+                            expert guidance, and a supportive community that celebrates every milestone on the journey 
+                            to a healthier, stronger, and more confident you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Products Section -->
+        <section class="products-section" id="products">
+            <div class="products-container">
+                <!-- Section Header -->
+                <div class="products-header">
+                    <h2 class="products-title">Our Premium Products</h2>
+                    <p class="products-subtitle">Discover our cutting-edge fitness equipment and supplements</p>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-slider-container">
+                    <!-- Navigation Arrows -->
+                    <button class="products-nav prev" aria-label="Previous products">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="products-nav next" aria-label="Next products">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Products Grid -->
+                    <div class="products-grid" id="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-product="1">
+                        <div class="product-image">
+                            <img src="Media/Smart Fitness Tracker.webp" alt="Smart Fitness Tracker" loading="lazy">
+                            <div class="product-badge">Best Seller</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="1">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Smart Fitness Tracker</h3>
+                            <p class="product-category">Wearable Technology</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$199.99</span>
+                                <span class="original-price">$249.99</span>
+                            </div>
+                            <div class="product-tabs">
+                                <button class="tab-btn active" data-tab="features">Features</button>
+                                <button class="tab-btn" data-tab="specs">Specs</button>
+                                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                            </div>
+                            <div class="product-content">
+                                <div class="tab-content active" data-content="features">
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check"></i> Heart rate monitoring</li>
+                                        <li><i class="fas fa-check"></i> Sleep tracking</li>
+                                        <li><i class="fas fa-check"></i> Water resistant</li>
+                                        <li><i class="fas fa-check"></i> 7-day battery life</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="specs">
+                                    <ul class="specs-list">
+                                        <li><strong>Display:</strong> 1.4" AMOLED</li>
+                                        <li><strong>Battery:</strong> 7 days</li>
+                                        <li><strong>Water Rating:</strong> 5ATM</li>
+                                        <li><strong>Connectivity:</strong> Bluetooth 5.0</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="reviews">
+                                    <div class="review-summary">
+                                        <div class="review-stats">
+                                            <span>4.9/5</span>
+                                            <span>1,247 reviews</span>
+                                        </div>
+                                        <p>"Amazing accuracy and battery life!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card" data-product="2">
+                        <div class="product-image">
+                            <img src="Media/Protein Powder.png" alt="Premium Protein Powder" loading="lazy">
+                            <div class="product-badge new">New</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="2">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Premium Protein Powder</h3>
+                            <p class="product-category">Nutrition Supplements</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$49.99</span>
+                                <span class="original-price">$59.99</span>
+                            </div>
+                            <div class="product-tabs">
+                                <button class="tab-btn active" data-tab="features">Features</button>
+                                <button class="tab-btn" data-tab="specs">Specs</button>
+                                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                            </div>
+                            <div class="product-content">
+                                <div class="tab-content active" data-content="features">
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check"></i> 25g protein per serving</li>
+                                        <li><i class="fas fa-check"></i> Whey isolate</li>
+                                        <li><i class="fas fa-check"></i> No artificial flavors</li>
+                                        <li><i class="fas fa-check"></i> Mixes easily</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="specs">
+                                    <ul class="specs-list">
+                                        <li><strong>Protein:</strong> 25g per serving</li>
+                                        <li><strong>Calories:</strong> 120 per serving</li>
+                                        <li><strong>Size:</strong> 2.5 lbs</li>
+                                        <li><strong>Type:</strong> Whey Isolate</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="reviews">
+                                    <div class="review-summary">
+                                        <div class="review-stats">
+                                            <span>4.7/5</span>
+                                            <span>892 reviews</span>
+                                        </div>
+                                        <p>"Great taste and quality protein!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card" data-product="3">
+                        <div class="product-image">
+                            <img src="Media/Dumbbell.png" alt="Adjustable Dumbbells" loading="lazy">
+                            <div class="product-badge">Popular</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="3">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Adjustable Dumbbells</h3>
+                            <p class="product-category">Strength Training</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$299.99</span>
+                                <span class="original-price">$399.99</span>
+                            </div>
+                            <div class="product-tabs">
+                                <button class="tab-btn active" data-tab="features">Features</button>
+                                <button class="tab-btn" data-tab="specs">Specs</button>
+                                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                            </div>
+                            <div class="product-content">
+                                <div class="tab-content active" data-content="features">
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check"></i> 5-50 lbs adjustable</li>
+                                        <li><i class="fas fa-check"></i> Space-saving design</li>
+                                        <li><i class="fas fa-check"></i> Quick weight change</li>
+                                        <li><i class="fas fa-check"></i> Durable construction</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="specs">
+                                    <ul class="specs-list">
+                                        <li><strong>Weight Range:</strong> 5-50 lbs</li>
+                                        <li><strong>Material:</strong> Steel</li>
+                                        <li><strong>Dimensions:</strong> 15" x 8" x 8"</li>
+                                        <li><strong>Warranty:</strong> 2 years</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="reviews">
+                                    <div class="review-summary">
+                                        <div class="review-stats">
+                                            <span>4.8/5</span>
+                                            <span>1,156 reviews</span>
+                                        </div>
+                                        <p>"Perfect for home gym setup!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card" data-product="4">
+                        <div class="product-image">
+                            <img src="Media/Yoga Mat.png" alt="Yoga Mat Premium" loading="lazy">
+                            <div class="product-badge">Eco-Friendly</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="4">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Yoga Mat Premium</h3>
+                            <p class="product-category">Yoga & Pilates</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$79.99</span>
+                                <span class="original-price">$99.99</span>
+                            </div>
+                            <div class="product-tabs">
+                                <button class="tab-btn active" data-tab="features">Features</button>
+                                <button class="tab-btn" data-tab="specs">Specs</button>
+                                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                            </div>
+                            <div class="product-content">
+                                <div class="tab-content active" data-content="features">
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check"></i> Non-slip surface</li>
+                                        <li><i class="fas fa-check"></i> Eco-friendly materials</li>
+                                        <li><i class="fas fa-check"></i> Extra thick (6mm)</li>
+                                        <li><i class="fas fa-check"></i> Easy to clean</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="specs">
+                                    <ul class="specs-list">
+                                        <li><strong>Thickness:</strong> 6mm</li>
+                                        <li><strong>Material:</strong> TPE</li>
+                                        <li><strong>Size:</strong> 72" x 24"</li>
+                                        <li><strong>Weight:</strong> 2.5 lbs</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="reviews">
+                                    <div class="review-summary">
+                                        <div class="review-stats">
+                                            <span>4.9/5</span>
+                                            <span>743 reviews</span>
+                                        </div>
+                                        <p>"Excellent grip and comfort!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card" data-product="5">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Resistance Bands Set" loading="lazy">
+                            <div class="product-badge">Bundle</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="5">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Resistance Bands Set</h3>
+                            <p class="product-category">Resistance Training</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.6)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$39.99</span>
+                                <span class="original-price">$59.99</span>
+                            </div>
+                            <div class="product-tabs">
+                                <button class="tab-btn active" data-tab="features">Features</button>
+                                <button class="tab-btn" data-tab="specs">Specs</button>
+                                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                            </div>
+                            <div class="product-content">
+                                <div class="tab-content active" data-content="features">
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check"></i> 5 resistance levels</li>
+                                        <li><i class="fas fa-check"></i> Door anchor included</li>
+                                        <li><i class="fas fa-check"></i> Exercise guide</li>
+                                        <li><i class="fas fa-check"></i> Portable design</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="specs">
+                                    <ul class="specs-list">
+                                        <li><strong>Resistance:</strong> 10-50 lbs</li>
+                                        <li><strong>Material:</strong> Latex</li>
+                                        <li><strong>Length:</strong> 48 inches</li>
+                                        <li><strong>Set Includes:</strong> 5 bands + accessories</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="reviews">
+                                    <div class="review-summary">
+                                        <div class="review-stats">
+                                            <span>4.6/5</span>
+                                            <span>634 reviews</span>
+                                        </div>
+                                        <p>"Great value and quality!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card" data-product="6">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Pre-Workout Supplement" loading="lazy">
+                            <div class="product-badge">Energy Boost</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="6">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Pre-Workout Supplement</h3>
+                            <p class="product-category">Performance Boost</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$34.99</span>
+                                <span class="original-price">$44.99</span>
+                            </div>
+                            <div class="product-tabs">
+                                <button class="tab-btn active" data-tab="features">Features</button>
+                                <button class="tab-btn" data-tab="specs">Specs</button>
+                                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                            </div>
+                            <div class="product-content">
+                                <div class="tab-content active" data-content="features">
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check"></i> Caffeine boost</li>
+                                        <li><i class="fas fa-check"></i> Beta-alanine</li>
+                                        <li><i class="fas fa-check"></i> Creatine included</li>
+                                        <li><i class="fas fa-check"></i> Great taste</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="specs">
+                                    <ul class="specs-list">
+                                        <li><strong>Caffeine:</strong> 200mg</li>
+                                        <li><strong>Servings:</strong> 30</li>
+                                        <li><strong>Flavor:</strong> Fruit Punch</li>
+                                        <li><strong>Size:</strong> 300g</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="reviews">
+                                    <div class="review-summary">
+                                        <div class="review-stats">
+                                            <span>4.8/5</span>
+                                            <span>1,089 reviews</span>
+                                        </div>
+                                        <p>"Amazing energy boost!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card" data-product="7">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Foam Roller Set" loading="lazy">
+                            <div class="product-badge">Recovery</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="7">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Foam Roller Set</h3>
+                            <p class="product-category">Recovery & Therapy</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$59.99</span>
+                                <span class="original-price">$79.99</span>
+                            </div>
+                            <div class="product-tabs">
+                                <button class="tab-btn active" data-tab="features">Features</button>
+                                <button class="tab-btn" data-tab="specs">Specs</button>
+                                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                            </div>
+                            <div class="product-content">
+                                <div class="tab-content active" data-content="features">
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check"></i> 3 different densities</li>
+                                        <li><i class="fas fa-check"></i> Muscle recovery</li>
+                                        <li><i class="fas fa-check"></i> Portable design</li>
+                                        <li><i class="fas fa-check"></i> Exercise guide</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="specs">
+                                    <ul class="specs-list">
+                                        <li><strong>Densities:</strong> Soft, Medium, Firm</li>
+                                        <li><strong>Length:</strong> 12 inches</li>
+                                        <li><strong>Diameter:</strong> 6 inches</li>
+                                        <li><strong>Material:</strong> EVA foam</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="reviews">
+                                    <div class="review-summary">
+                                        <div class="review-stats">
+                                            <span>4.7/5</span>
+                                            <span>567 reviews</span>
+                                        </div>
+                                        <p>"Perfect for muscle recovery!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card" data-product="8">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Jump Rope Pro" loading="lazy">
+                            <div class="product-badge">Cardio</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="8">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Jump Rope Pro</h3>
+                            <p class="product-category">Cardio Equipment</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$24.99</span>
+                                <span class="original-price">$34.99</span>
+                            </div>
+                            <div class="product-tabs">
+                                <button class="tab-btn active" data-tab="features">Features</button>
+                                <button class="tab-btn" data-tab="specs">Specs</button>
+                                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                            </div>
+                            <div class="product-content">
+                                <div class="tab-content active" data-content="features">
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check"></i> Adjustable length</li>
+                                        <li><i class="fas fa-check"></i> Ball bearings</li>
+                                        <li><i class="fas fa-check"></i> Ergonomic handles</li>
+                                        <li><i class="fas fa-check"></i> Speed rope design</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="specs">
+                                    <ul class="specs-list">
+                                        <li><strong>Length:</strong> Adjustable</li>
+                                        <li><strong>Cable:</strong> Steel wire</li>
+                                        <li><strong>Handles:</strong> Ergonomic</li>
+                                        <li><strong>Weight:</strong> 0.3 lbs</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="reviews">
+                                    <div class="review-summary">
+                                        <div class="review-stats">
+                                            <span>4.9/5</span>
+                                            <span>892 reviews</span>
+                                        </div>
+                                        <p>"Smooth and fast!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card" data-product="9">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Kettlebell Set" loading="lazy">
+                            <div class="product-badge">Strength</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="9">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Kettlebell Set</h3>
+                            <p class="product-category">Functional Training</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$149.99</span>
+                                <span class="original-price">$199.99</span>
+                            </div>
+                            <div class="product-tabs">
+                                <button class="tab-btn active" data-tab="features">Features</button>
+                                <button class="tab-btn" data-tab="specs">Specs</button>
+                                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                            </div>
+                            <div class="product-content">
+                                <div class="tab-content active" data-content="features">
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check"></i> 3 weight options</li>
+                                        <li><i class="fas fa-check"></i> Cast iron construction</li>
+                                        <li><i class="fas fa-check"></i> Smooth handle</li>
+                                        <li><i class="fas fa-check"></i> Workout guide</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="specs">
+                                    <ul class="specs-list">
+                                        <li><strong>Weights:</strong> 15, 25, 35 lbs</li>
+                                        <li><strong>Material:</strong> Cast iron</li>
+                                        <li><strong>Handle:</strong> Smooth finish</li>
+                                        <li><strong>Coating:</strong> Powder coated</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="reviews">
+                                    <div class="review-summary">
+                                        <div class="review-stats">
+                                            <span>4.8/5</span>
+                                            <span>756 reviews</span>
+                                        </div>
+                                        <p>"Excellent quality and value!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <div class="product-card" data-product="10">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Multivitamin Complex" loading="lazy">
+                            <div class="product-badge">Health</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="10">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Multivitamin Complex</h3>
+                            <p class="product-category">Health Supplements</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$29.99</span>
+                                <span class="original-price">$39.99</span>
+                            </div>
+                            <div class="product-tabs">
+                                <button class="tab-btn active" data-tab="features">Features</button>
+                                <button class="tab-btn" data-tab="specs">Specs</button>
+                                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                            </div>
+                            <div class="product-content">
+                                <div class="tab-content active" data-content="features">
+                                    <ul class="features-list">
+                                        <li><i class="fas fa-check"></i> 25 essential vitamins</li>
+                                        <li><i class="fas fa-check"></i> Daily energy support</li>
+                                        <li><i class="fas fa-check"></i> Easy to swallow</li>
+                                        <li><i class="fas fa-check"></i> 90-day supply</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="specs">
+                                    <ul class="specs-list">
+                                        <li><strong>Vitamins:</strong> 25 essential</li>
+                                        <li><strong>Tablets:</strong> 90 count</li>
+                                        <li><strong>Size:</strong> Standard</li>
+                                        <li><strong>Supply:</strong> 90 days</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" data-content="reviews">
+                                    <div class="review-summary">
+                                        <div class="review-stats">
+                                            <span>4.9/5</span>
+                                            <span>1,234 reviews</span>
+                                        </div>
+                                        <p>"Great daily vitamin!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Indicator Dots -->
+                <div class="products-indicators">
+                    <button class="indicator-dot active" data-slide="0"></button>
+                    <button class="indicator-dot" data-slide="1"></button>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="products-footer">
+                    <button class="load-more-btn">Load More Products</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Futuristic Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <!-- Background Elements -->
+                <div class="contact-bg-elements">
+                    <div class="bg-circle circle-1"></div>
+                    <div class="bg-circle circle-2"></div>
+                    <div class="bg-circle circle-3"></div>
+                    <div class="bg-grid"></div>
+                </div>
+
+                <!-- Section Header -->
+                <div class="contact-header">
+                    <h2 class="contact-title">
+                        <span class="title-text">Ready to Transform</span>
+                        <span class="title-accent">Your Fitness Journey?</span>
+                    </h2>
+                    <p class="contact-subtitle">
+                        Join thousands of satisfied customers who have achieved their fitness goals with Shredzone.
+                        Get personalized guidance and cutting-edge technology at your fingertips.
+                    </p>
+                </div>
+
+                <!-- Contact Cards -->
+                <div class="contact-cards">
+                    <!-- Enquire Now Card -->
+                    <div class="contact-card enquire-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3 class="card-title">Enquire Now</h3>
+                            <p class="card-description">
+                                Get instant answers to your questions about our products, services, and fitness programs.
+                                Our expert team is ready to help you choose the perfect solution.
+                            </p>
+                            <div class="card-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Instant Response</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Expert Consultation</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Custom Recommendations</span>
+                                </div>
+                            </div>
+                            <button class="contact-btn enquire-btn" id="enquire-btn">
+                                <span class="btn-text">Enquire Now</span>
+                                <div class="btn-icon">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <div class="btn-ripple"></div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Book Demo Card -->
+                    <div class="contact-card demo-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3 class="card-title">Book a Demo</h3>
+                            <p class="card-description">
+                                Experience our platform firsthand with a personalized demo session. See how our technology
+                                can revolutionize your fitness routine and help you achieve your goals faster.
+                            </p>
+                            <div class="card-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Live Demonstration</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Personalized Setup</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Q&A Session</span>
+                                </div>
+                            </div>
+                            <button class="contact-btn demo-btn" id="demo-btn">
+                                <span class="btn-text">Book Demo Session</span>
+                                <div class="btn-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div class="btn-ripple"></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email Us</h4>
+                            <p>info@shredzone.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Available</h4>
+                            <p>24/7 Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Footer -->
+        <footer class="footer-section">
+            <div class="footer-container">
+                <!-- Footer Top -->
+                <div class="footer-top">
+                    <!-- Company Info -->
+                    <div class="footer-column company-info">
+                        <div class="footer-logo">
+                            <div class="logo-container">
+                                <div class="logo-icon">
+                                    <i class="fas fa-dumbbell"></i>
+                                </div>
+                                <div class="logo-text">
+                                    <h3>SHREDZONE</h3>
+                                    <p>Enter the Zone. Leave the Excuses.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="company-description">
+                            Transform your fitness journey with cutting-edge technology, expert guidance, 
+                            and a supportive community. Join thousands who have achieved their goals with Shredzone.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link facebook" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link twitter" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link instagram" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link youtube" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-column quick-links">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Products -->
+                    <div class="footer-column products-links">
+                        <h4 class="footer-title">Products</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Fitness Trackers</a></li>
+                            <li><a href="#">Protein Supplements</a></li>
+                            <li><a href="#">Strength Training</a></li>
+                            <li><a href="#">Cardio Equipment</a></li>
+                            <li><a href="#">Recovery Tools</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Calculators -->
+                    <div class="footer-column calculators-links">
+                        <h4 class="footer-title">Calculators</h4>
+                        <ul class="footer-links">
+                            <li><a href="bmi.html">BMI Calculator</a></li>
+                            <li><a href="bms.html">BMR Calculator</a></li>
+                            <li><a href="calories.html">Calorie Planner</a></li>
+                            <li><a href="diet.html">Diet Chart Generator</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-column contact-info">
+                        <h4 class="footer-title">Contact Info</h4>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span>Address</span>
+                                    <p>123 Fitness Street<br>Health City, HC 12345</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span>Phone</span>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span>Email</span>
+                                    <p>info@shredzone.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <span>Hours</span>
+                                    <p>24/7 Support Available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Middle -->
+                <div class="footer-middle">
+                    <div class="newsletter-section">
+                        <div class="newsletter-content">
+                            <h4>Stay Updated</h4>
+                            <p>Get the latest fitness tips, product updates, and exclusive offers delivered to your inbox.</p>
+                        </div>
+                        <div class="newsletter-form">
+                            <form class="subscribe-form">
+                                <input type="email" placeholder="Enter your email address" required>
+                                <button type="submit" class="subscribe-btn">
+                                    <span>Subscribe</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="copyright">
+                            <p>&copy; 2024 Shredzone. All rights reserved.</p>
+                        </div>
+                        <div class="footer-links-bottom">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Cookie Policy</a>
+                            <a href="#">Refund Policy</a>
+                        </div>
+                        <div class="payment-methods">
+                            <span>We Accept:</span>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-paypal"></i>
+                                <i class="fab fa-cc-stripe"></i>
+                                <i class="fab fa-cc-apple-pay"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>

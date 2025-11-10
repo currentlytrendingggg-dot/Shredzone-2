@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Shredzone</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Left: Logo and Brand -->
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <img src="Media/Logo.png" alt="Shredzone Logo" class="logo">
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-name">SHREDZONE</h1>
+                    <p class="brand-slogan">Enter the Zone. Leave the Excuses.</p>
+                </div>
+            </div>
+
+            <!-- Center: Navigation Menu -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link active">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="bmi.html" class="nav-link dropdown-toggle">
+                            Calculators
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bmi.html" class="dropdown-link">BMI Calculator</a></li>
+                            <li><a href="bms.html" class="dropdown-link">BMR Calculator</a></li>
+                            <li><a href="calories.html" class="dropdown-link">Calorie Planner</a></li>
+                            <li><a href="diet.html" class="dropdown-link">Diet Chart Generator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: Social Media Icons -->
+            <div class="nav-social">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="products-page">
+        <section class="products-hero">
+            <div class="products-hero-content">
+                <span class="hero-eyebrow">Gear Up Smarter</span>
+                <h1 class="hero-title">Premium Fitness Equipment & Performance Fuel</h1>
+                <p class="hero-subtitle">
+                    Build your dream training stack with pro-grade gear, science-backed supplements,
+                    and recovery tech trusted by elite coaches. Curated collections, dynamic bundles,
+                    and data-driven recommendations keep you ahead of every goal.
+                </p>
+                <div class="products-hero-actions">
+                    <a href="#bundles" class="primary-btn">Explore Bundles</a>
+                    <a href="#comparison" class="ghost-btn">Download Product Specs</a>
+                </div>
+                <div class="products-hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">150+</span>
+                        <span class="hero-stat-label">Verified Products</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">4.9/5</span>
+                        <span class="hero-stat-label">Average Customer Rating</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">72 hr</span>
+                        <span class="hero-stat-label">Delivery in Major Cities</span>
+                    </div>
+                </div>
+            </div>
+            <div class="products-hero-visual">
+                <div class="hero-visual-card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=600&fit=crop" alt="Performance Gear">
+                    <div class="hero-visual-overlay">
+                        <div class="overlay-badge">
+                            <span>New Drop</span>
+                            <strong>Adaptive Strength Stack</strong>
+                        </div>
+                        <ul class="overlay-features">
+                            <li><i class="fas fa-check"></i> AI-personalized programming</li>
+                            <li><i class="fas fa-check"></i> Smart wearable integration</li>
+                            <li><i class="fas fa-check"></i> Complimentary nutrition plan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-discovery">
+            <div class="products-filter-bar">
+                <div class="filter-search">
+                    <i class="fas fa-search"></i>
+                    <input type="search" id="products-search" placeholder="Search by product name, feature, or goal">
+                </div>
+                <div class="filter-chips" role="tablist" aria-label="Product categories">
+                    <button class="filter-chip active" data-filter="all">All</button>
+                    <button class="filter-chip" data-filter="strength">Strength</button>
+                    <button class="filter-chip" data-filter="wearables">Wearables</button>
+                    <button class="filter-chip" data-filter="nutrition">Nutrition</button>
+                    <button class="filter-chip" data-filter="recovery">Recovery</button>
+                    <button class="filter-chip" data-filter="cardio">Cardio</button>
+                    <button class="filter-chip" data-filter="accessories">Accessories</button>
+                </div>
+                <div class="filter-controls">
+                    <div class="price-control">
+                        <label for="price-range">Max budget</label>
+                        <div class="price-display">
+                            <span id="price-range-value">$350</span>
+                        </div>
+                        <input type="range" id="price-range" min="20" max="500" value="350" step="10">
+                    </div>
+                    <div class="sort-control">
+                        <label for="products-sort">Sort by</label>
+                        <select id="products-sort">
+                            <option value="featured">Featured</option>
+                            <option value="price-low-high">Price: Low to High</option>
+                            <option value="price-high-low">Price: High to Low</option>
+                            <option value="rating">Customer Rating</option>
+                            <option value="newest">Newest Releases</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-showcase">
+                <div class="products-showcase-grid" id="products-showcase-grid">
+                    <div class="product-card" data-order="1" data-name="Smart Performance Tracker" data-category="wearables" data-price="199" data-rating="4.9" data-release="2024-01-15">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=600&h=400&fit=crop" alt="Smart Performance Tracker">
+                            <div class="product-badge new">New</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product-id="tracker">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Smart Performance Tracker</h3>
+                            <p class="product-category">Wearable Technology</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$199.00</span>
+                                <span class="original-price">$249.00</span>
+                            </div>
+                            <div class="product-metrics">
+                                <span><i class="fas fa-bolt"></i> HRV & VO2 max</span>
+                                <span><i class="fas fa-mobile-alt"></i> App sync</span>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Dual-band GPS tracking</li>
+                                <li><i class="fas fa-check"></i> AI recovery scoring</li>
+                                <li><i class="fas fa-check"></i> 14-day battery life</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-order="2" data-name="Premium Protein Isolate" data-category="nutrition" data-price="54" data-rating="4.8" data-release="2023-11-05">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1546483864-7fae1a4a7c75?w=600&h=400&fit=crop" alt="Premium Protein Isolate">
+                            <div class="product-badge">Best Seller</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product-id="protein">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Premium Protein Isolate</h3>
+                            <p class="product-category">Nutrition</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$54.00</span>
+                                <span class="original-price">$64.00</span>
+                            </div>
+                            <div class="product-metrics">
+                                <span><i class="fas fa-utensils"></i> 25g protein</span>
+                                <span><i class="fas fa-leaf"></i> Grass-fed</span>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Micro-filtered whey isolate</li>
+                                <li><i class="fas fa-check"></i> No artificial sweeteners</li>
+                                <li><i class="fas fa-check"></i> Added digestive enzymes</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-order="3" data-name="Adaptive Adjustable Dumbbells" data-category="strength" data-price="329" data-rating="4.9" data-release="2023-08-19">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&h=400&fit=crop" alt="Adaptive Adjustable Dumbbells">
+                            <div class="product-badge">Popular</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product-id="dumbbells">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Adaptive Adjustable Dumbbells</h3>
+                            <p class="product-category">Strength Training</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$329.00</span>
+                                <span class="original-price">$399.00</span>
+                            </div>
+                            <div class="product-metrics">
+                                <span><i class="fas fa-dumbbell"></i> 5–90 lbs range</span>
+                                <span><i class="fas fa-sync"></i> 2-sec changeover</span>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Magnetic weight locking</li>
+                                <li><i class="fas fa-check"></i> Knurled steel grip</li>
+                                <li><i class="fas fa-check"></i> Companion workout app</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-order="4" data-name="Infrared Recovery Boots" data-category="recovery" data-price="449" data-rating="4.7" data-release="2022-12-10">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1526402467131-81571c9d1fcd?w=600&h=400&fit=crop" alt="Infrared Recovery Boots">
+                            <div class="product-badge">Athlete Favorite</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product-id="recovery-boots">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Infrared Recovery Boots</h3>
+                            <p class="product-category">Recovery Tech</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$449.00</span>
+                                <span class="original-price">$529.00</span>
+                            </div>
+                            <div class="product-metrics">
+                                <span><i class="fas fa-sun"></i> Infrared heat</span>
+                                <span><i class="fas fa-wave-square"></i> 6 pressure zones</span>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Dynamic compression cycles</li>
+                                <li><i class="fas fa-check"></i> Bluetooth protocol presets</li>
+                                <li><i class="fas fa-check"></i> Travel-ready carry case</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-order="5" data-name="Hybrid Training Bench" data-category="strength" data-price="279" data-rating="4.6" data-release="2023-02-14">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&h=400&fit=crop" alt="Hybrid Training Bench">
+                            <div class="product-badge">Studio Grade</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product-id="training-bench">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Hybrid Training Bench</h3>
+                            <p class="product-category">Strength Training</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.6)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$279.00</span>
+                                <span class="original-price">$329.00</span>
+                            </div>
+                            <div class="product-metrics">
+                                <span><i class="fas fa-weight-hanging"></i> 1,000 lb rating</span>
+                                <span><i class="fas fa-sliders-h"></i> 9 incline presets</span>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> High-density antimicrobial padding</li>
+                                <li><i class="fas fa-check"></i> Locking caster wheels</li>
+                                <li><i class="fas fa-check"></i> Integrated band anchors</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-order="6" data-name="Velocity Jump Rope Pro" data-category="cardio" data-price="39" data-rating="4.5" data-release="2024-03-02">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1574689049866-0f1680ecb5ab?w=600&h=400&fit=crop" alt="Velocity Jump Rope Pro">
+                            <div class="product-badge bundle">Bundle Ready</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product-id="jump-rope">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Velocity Jump Rope Pro</h3>
+                            <p class="product-category">Cardio</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.5)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$39.00</span>
+                                <span class="original-price">$49.00</span>
+                            </div>
+                            <div class="product-metrics">
+                                <span><i class="fas fa-tachometer-alt"></i> Speed bearings</span>
+                                <span><i class="fas fa-cut"></i> Custom length</span>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Aircraft-grade cable</li>
+                                <li><i class="fas fa-check"></i> Ergonomic silicone grips</li>
+                                <li><i class="fas fa-check"></i> Includes weighted sleeves</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-order="7" data-name="Recovery Foam Kit" data-category="recovery" data-price="69" data-rating="4.6" data-release="2023-09-24">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?w=600&h=400&fit=crop" alt="Recovery Foam Kit">
+                            <div class="product-badge">Recovery Essential</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product-id="recovery-kit">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Recovery Foam Kit</h3>
+                            <p class="product-category">Recovery Tools</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.6)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$69.00</span>
+                                <span class="original-price">$89.00</span>
+                            </div>
+                            <div class="product-metrics">
+                                <span><i class="fas fa-layer-group"></i> 3 density levels</span>
+                                <span><i class="fas fa-exchange-alt"></i> Travel size</span>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Includes guide from PTs</li>
+                                <li><i class="fas fa-check"></i> Hypoallergenic EVA foam</li>
+                                <li><i class="fas fa-check"></i> Trigger-point massage ball</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-order="8" data-name="Metabolic Ignite Pre-Workout" data-category="nutrition" data-price="42" data-rating="4.4" data-release="2024-04-07">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1481391032119-d89fee407e44?w=600&h=400&fit=crop" alt="Metabolic Ignite Pre-Workout">
+                            <div class="product-badge">Energy Boost</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product-id="preworkout">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Metabolic Ignite Pre-Workout</h3>
+                            <p class="product-category">Performance Nutrition</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.4)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$42.00</span>
+                                <span class="original-price">$52.00</span>
+                            </div>
+                            <div class="product-metrics">
+                                <span><i class="fas fa-bolt"></i> 200mg caffeine</span>
+                                <span><i class="fas fa-flask"></i> Clinical dosing</span>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Nitrate-powered pumps</li>
+                                <li><i class="fas fa-check"></i> Neuro-focus blend</li>
+                                <li><i class="fas fa-check"></i> Informed-Sport certified</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-order="9" data-name="Carbon Fiber Lifting Belt" data-category="accessories" data-price="119" data-rating="4.8" data-release="2023-06-30">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=400&fit=crop" alt="Carbon Fiber Lifting Belt">
+                            <div class="product-badge">Elite</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product-id="lifting-belt">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Carbon Fiber Lifting Belt</h3>
+                            <p class="product-category">Accessories</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$119.00</span>
+                                <span class="original-price">$139.00</span>
+                            </div>
+                            <div class="product-metrics">
+                                <span><i class="fas fa-shield-alt"></i> IWF compliant</span>
+                                <span><i class="fas fa-feather-alt"></i> 40% lighter</span>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Carbon fiber composite core</li>
+                                <li><i class="fas fa-check"></i> Auto-lock lever system</li>
+                                <li><i class="fas fa-check"></i> Antimicrobial micro-suede</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-order="10" data-name="Connected Rowing Machine" data-category="cardio" data-price="849" data-rating="4.9" data-release="2022-10-18">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=600&h=400&fit=crop" alt="Connected Rowing Machine">
+                            <div class="product-badge">Studio Experience</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product-id="rower">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Connected Rowing Machine</h3>
+                            <p class="product-category">Cardio Equipment</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$849.00</span>
+                                <span class="original-price">$999.00</span>
+                            </div>
+                            <div class="product-metrics">
+                                <span><i class="fas fa-tv"></i> 22" HD display</span>
+                                <span><i class="fas fa-wifi"></i> Live leaderboards</span>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Magnetic + air hybrid resistance</li>
+                                <li><i class="fas fa-check"></i> 1:1 coaching sessions</li>
+                                <li><i class="fas fa-check"></i> Space-saving vertical storage</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-order="11" data-name="Mobility Bands Mega Pack" data-category="accessories" data-price="59" data-rating="4.3" data-release="2023-05-22">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1616690710400-a16d1440c234?w=600&h=400&fit=crop" alt="Mobility Bands Mega Pack">
+                            <div class="product-badge">Coach Approved</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product-id="bands">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Mobility Bands Mega Pack</h3>
+                            <p class="product-category">Accessories</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.3)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$59.00</span>
+                                <span class="original-price">$79.00</span>
+                            </div>
+                            <div class="product-metrics">
+                                <span><i class="fas fa-chart-line"></i> 5 resistance levels</span>
+                                <span><i class="fas fa-suitcase"></i> Travel pouch</span>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> 100% natural latex</li>
+                                <li><i class="fas fa-check"></i> Detailed mobility programming</li>
+                                <li><i class="fas fa-check"></i> Anchors & handles included</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-order="12" data-name="Deep Sleep Magnesium Complex" data-category="nutrition" data-price="29" data-rating="4.6" data-release="2022-07-11">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=400&fit=crop" alt="Deep Sleep Magnesium Complex">
+                            <div class="product-badge">Sleep</div>
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product-id="magnesium">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Deep Sleep Magnesium Complex</h3>
+                            <p class="product-category">Wellness Nutrition</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.6)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$29.00</span>
+                                <span class="original-price">$35.00</span>
+                            </div>
+                            <div class="product-metrics">
+                                <span><i class="fas fa-moon"></i> 3 magnesium forms</span>
+                                <span><i class="fas fa-lungs"></i> Calming L-theanine</span>
+                            </div>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Clinically effective dosages</li>
+                                <li><i class="fas fa-check"></i> Zero fillers or dyes</li>
+                                <li><i class="fas fa-check"></i> Nightly sleep protocol included</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-load-more">
+                <button class="advanced-load-more" id="products-load-more">Show 5 More Products</button>
+            </div>
+        </section>
+
+        <section class="products-bundles" id="bundles">
+            <div class="section-header">
+                <span class="eyebrow">Curated Collections</span>
+                <h2>Bundles Engineered for Faster Progress</h2>
+                <p>Save up to 22% with expertly paired equipment, supplements, and recovery essentials tailored to your training block.</p>
+            </div>
+            <div class="bundle-grid">
+                <article class="bundle-card">
+                    <div class="bundle-header">
+                        <span class="bundle-badge">Strength Accelerator</span>
+                        <h3>Hybrid Powerlifting Kit</h3>
+                        <p>Includes adaptive dumbbells, carbon fiber belt, and our progressive overload program.</p>
+                    </div>
+                    <ul class="bundle-features">
+                        <li><i class="fas fa-check"></i> Weekly coaching check-ins</li>
+                        <li><i class="fas fa-check"></i> Personalized accessory tracks</li>
+                        <li><i class="fas fa-check"></i> Free 12-week nutrition sync</li>
+                    </ul>
+                    <div class="bundle-footer">
+                        <div class="bundle-price">
+                            <span class="current-price">$799</span>
+                            <span class="original-price">$1,019</span>
+                        </div>
+                        <button class="primary-btn">Build My Bundle</button>
+                    </div>
+                </article>
+                <article class="bundle-card">
+                    <div class="bundle-header">
+                        <span class="bundle-badge recovery">Recovery & Sleep</span>
+                        <h3>Total Regeneration Stack</h3>
+                        <p>Infrared boots, magnesium complex, and on-demand mobility sessions for faster turnaround.</p>
+                    </div>
+                    <ul class="bundle-features">
+                        <li><i class="fas fa-check"></i> Nightly guided breathwork</li>
+                        <li><i class="fas fa-check"></i> HRV trend monitoring</li>
+                        <li><i class="fas fa-check"></i> 60-day habit dashboard</li>
+                    </ul>
+                    <div class="bundle-footer">
+                        <div class="bundle-price">
+                            <span class="current-price">$589</span>
+                            <span class="original-price">$742</span>
+                        </div>
+                        <button class="ghost-btn">View Bundle Details</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="products-comparison" id="comparison">
+            <div class="section-header">
+                <span class="eyebrow">Compare Specs</span>
+                <h2>Find the Perfect Upgrade for Your Training Zone</h2>
+                <p>Side-by-side performance metrics and coverage at a glance. Mix and match for your studio, gym, or remote coaching clients.</p>
+            </div>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Key Technology</th>
+                            <th>Ideal For</th>
+                            <th>Warranty</th>
+                            <th>Financing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Smart Performance Tracker</strong>
+                                <span>Wearables</span>
+                            </td>
+                            <td>Dual-band GPS, HRV, sleep scoring</td>
+                            <td>Endurance athletes, hybrid programs</td>
+                            <td>24 months</td>
+                            <td>Starting at $18/mo</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Adaptive Adjustable Dumbbells</strong>
+                                <span>Strength</span>
+                            </td>
+                            <td>Magnetic lock, app-based presets</td>
+                            <td>Micro gyms, progressive overload</td>
+                            <td>Lifetime frame, 5-year components</td>
+                            <td>Starting at $32/mo</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Infrared Recovery Boots</strong>
+                                <span>Recovery</span>
+                            </td>
+                            <td>Infrared heat, pneumatic compression</td>
+                            <td>High-volume training blocks, teams</td>
+                            <td>36 months</td>
+                            <td>Starting at $41/mo</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Connected Rowing Machine</strong>
+                                <span>Cardio</span>
+                            </td>
+                            <td>Hybrid resistance, 22" console</td>
+                            <td>Hybrid classes, conditioning suites</td>
+                            <td>5 years structural</td>
+                            <td>Starting at $56/mo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="products-cta">
+            <div class="cta-content">
+                <h2>Need a Coach-Curated Equipment Roadmap?</h2>
+                <p>
+                    Schedule a 1:1 consultation with our performance architects. We’ll audit your current setup,
+                    project ROI on upgrades, and build a quarterly rollout that keeps athletes winning.
+                </p>
+                <div class="cta-actions">
+                    <a href="contact.html" class="primary-btn">Book a Strategy Session</a>
+                    <a href="mailto:info@shredzone.com" class="ghost-btn">Email Our Gear Studio</a>
+                </div>
+            </div>
+            <div class="cta-visual">
+                <img src="https://images.unsplash.com/photo-1605296867720-104ef3b6c446?w=600&h=500&fit=crop" alt="Fitness facility">
+                <div class="cta-badge">
+                    <i class="fas fa-headset"></i>
+                    <span>Concierge support</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Advanced Footer -->
+ <footer class="footer-section">
+    <div class="footer-container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <!-- Company Info -->
+            <div class="footer-column company-info">
+                <div class="footer-logo">
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>SHREDZONE</h3>
+                            <p>Enter the Zone. Leave the Excuses.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="company-description">
+                    Transform your fitness journey with cutting-edge technology, expert guidance, 
+                    and a supportive community. Join thousands who have achieved their goals with Shredzone.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column quick-links">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="footer-column products-links">
+                <h4 class="footer-title">Products</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Fitness Trackers</a></li>
+                    <li><a href="#">Protein Supplements</a></li>
+                    <li><a href="#">Strength Training</a></li>
+                    <li><a href="#">Cardio Equipment</a></li>
+                    <li><a href="#">Recovery Tools</a></li>
+                </ul>
+            </div>
+
+            <!-- Calculators -->
+            <div class="footer-column calculators-links">
+                <h4 class="footer-title">Calculators</h4>
+                <ul class="footer-links">
+                    <li><a href="bmi.html">BMI Calculator</a></li>
+                    <li><a href="bms.html">BMR Calculator</a></li>
+                    <li><a href="calories.html">Calorie Planner</a></li>
+                    <li><a href="diet.html">Diet Chart Generator</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column contact-info">
+                <h4 class="footer-title">Contact Info</h4>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span>Address</span>
+                            <p>123 Fitness Street<br>Health City, HC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span>Phone</span>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span>Email</span>
+                            <p>info@shredzone.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <span>Hours</span>
+                            <p>24/7 Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Middle -->
+        <div class="footer-middle">
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest fitness tips, product updates, and exclusive offers delivered to your inbox.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="subscribe-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2024 Shredzone. All rights reserved.</p>
+                </div>
+                <div class="footer-links-bottom">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+                <div class="payment-methods">
+                    <span>We Accept:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-stripe"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="Script.js"></script>
+</body>
+</html>

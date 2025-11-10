@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Shredzone</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <img src="Media/Logo.png" alt="Shredzone Logo" class="logo">
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-name">SHREDZONE</h1>
+                    <p class="brand-slogan">Enter the Zone. Leave the Excuses.</p>
+                </div>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="bmi.html" class="nav-link dropdown-toggle">Calculators<i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bmi.html" class="dropdown-link">BMI Calculator</a></li>
+                            <li><a href="bms.html" class="dropdown-link">BMR Calculator</a></li>
+                            <li><a href="calories.html" class="dropdown-link">Calorie Planner</a></li>
+                            <li><a href="diet.html" class="dropdown-link">Diet Chart Generator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-social">
+                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <span class="hero-eyebrow">We're Here for Your Performance Journey</span>
+                <h1 class="hero-title">Connect with the Shredzone Performance Architects</h1>
+                <p class="hero-subtitle">
+                    Whether you’re seeking elite coaching, enterprise wellness deployments, or a custom nutrition roadmap, our team is ready to build the next phase of your evolution.
+                </p>
+                <div class="contact-hero-actions">
+                    <a href="#contact-form" class="primary-btn">Book a Strategy Call</a>
+                    <a href="tel:+15551234567" class="ghost-btn">Call +1 (555) 123-4567</a>
+                </div>
+            </div>
+            <div class="contact-hero-visual">
+                <div class="hero-visual-card">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=520&h=640&fit=crop" alt="Team meeting">
+                    <div class="hero-visual-overlay">
+                        <div class="overlay-badge">
+                            <span>Concierge Support</span>
+                            <strong>Dedicated performance concierge</strong>
+                        </div>
+                        <ul class="overlay-features">
+                            <li><i class="fas fa-check"></i> 24/7 elite athlete hotline</li>
+                            <li><i class="fas fa-check"></i> Global virtual consultations</li>
+                            <li><i class="fas fa-check"></i> Corporate wellness deployments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cards">
+            <article class="contact-card">
+                <div class="card-icon"><i class="fas fa-headset"></i></div>
+                <h3>Coaching & Programs</h3>
+                <p>Talk with our performance team about 1:1 coaching, remote labs, or team-wide rollouts.</p>
+                <a href="mailto:coaching@shredzone.com" class="card-link">coaching@shredzone.com</a>
+                <span class="card-meta">Response within 12 hours</span>
+            </article>
+            <article class="contact-card">
+                <div class="card-icon"><i class="fas fa-building"></i></div>
+                <h3>Corporate & Enterprise</h3>
+                <p>Schedule strategic planning for multi-location wellness, executive labs, and hybrid programs.</p>
+                <a href="mailto:enterprise@shredzone.com" class="card-link">enterprise@shredzone.com</a>
+                <span class="card-meta">Dedicated account director</span>
+            </article>
+            <article class="contact-card">
+                <div class="card-icon"><i class="fas fa-flask"></i></div>
+                <h3>Media & Research</h3>
+                <p>Request expert interviews, research collaborations, or meta-analytic partnerships.</p>
+                <a href="mailto:press@shredzone.com" class="card-link">press@shredzone.com</a>
+                <span class="card-meta">Media kit within 4 hours</span>
+            </article>
+        </section>
+
+        <section class="contact-form-section" id="contact-form">
+            <div class="contact-form-wrapper">
+                <div class="form-intro">
+                    <h2>Tell Us About Your Goals</h2>
+                    <p>Complete the form and we’ll connect you with the right architect. Expect a personalized response with next steps within one business day.</p>
+                </div>
+                <form id="contact-us-form" class="contact-form">
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" id="contact-name" placeholder="Your name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label for="contact-phone">Phone</label>
+                            <input type="tel" id="contact-phone" placeholder="+1 555 123 4567">
+                        </div>
+                        <div class="input-group">
+                            <label for="contact-topic">Topic</label>
+                            <select id="contact-topic">
+                                <option value="coaching" selected>Elite Coaching / Programs</option>
+                                <option value="enterprise">Corporate Wellness Deployment</option>
+                                <option value="labs">Nutrition / Recovery Labs</option>
+                                <option value="media">Media / Partnerships</option>
+                                <option value="support">General Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="contact-message">How can we help?</label>
+                        <textarea id="contact-message" rows="5" placeholder="Share training goals, team size, timelines, or any relevant details"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="preferred-time">Preferred Contact Time</label>
+                        <input type="text" id="preferred-time" placeholder="e.g. Weekdays 9am-2pm EST">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="primary-btn">Submit Inquiry</button>
+                        <button type="button" class="ghost-btn" id="contact-reset">Reset</button>
+                    </div>
+                </form>
+                <div class="form-success" id="contact-success" role="status" aria-live="polite"></div>
+            </div>
+            <aside class="contact-info-panel">
+                <h3>Global Offices</h3>
+                <div class="office-list">
+                    <div class="office">
+                        <h4>North America HQ</h4>
+                        <p>123 Performance Ave<br>Los Angeles, CA 90001<br>United States</p>
+                        <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+                        <span><i class="fas fa-envelope"></i> concierge@shredzone.com</span>
+                    </div>
+                    <div class="office">
+                        <h4>EMEA Performance Lab</h4>
+                        <p>78 Regent Street<br>London W1B 5RL<br>United Kingdom</p>
+                        <span><i class="fas fa-phone"></i> +44 20 7946 0950</span>
+                        <span><i class="fas fa-envelope"></i> europe@shredzone.com</span>
+                    </div>
+                    <div class="office">
+                        <h4>APAC Innovation Studio</h4>
+                        <p>22 Marina Boulevard<br>Singapore 018989<br>Singapore</p>
+                        <span><i class="fas fa-phone"></i> +65 6789 1234</span>
+                        <span><i class="fas fa-envelope"></i> apac@shredzone.com</span>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="contact-faq">
+            <div class="section-header">
+                <span class="eyebrow">Support & Logistics</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Instant answers to common queries. Need more detail? Our concierge team is just a message away.</p>
+            </div>
+            <div class="faq-grid">
+                <article class="faq-item">
+                    <button class="faq-toggle">
+                        <span>How quickly will I hear back after submitting the form?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>Expect a confirmation email immediately. A Shredzone architect will respond within one business day with next steps, recommended services, and scheduling options.</p>
+                    </div>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-toggle">
+                        <span>Do you offer virtual consultations?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>Yes. We operate globally with virtual coaching, lab reviews, and stand-up calls scheduled in your time zone. On-site visits are available for enterprise and athletic teams.</p>
+                    </div>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-toggle">
+                        <span>Can Shredzone integrate with our existing wellness platform?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>Our enterprise team integrates with major wellness platforms, SSO providers, and wearable APIs. We also offer custom dashboards and reporting for large-scale programs.</p>
+                    </div>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-toggle">
+                        <span>What if I'm not sure which service I need?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>Start with the inquiry form. Our architects will review your goals and suggest the optimal blend of coaching, labs, and support. We can stage engagements to match your readiness.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Advanced Footer -->
+    <footer class="footer-section">
+       <div class="footer-container">
+           <div class="footer-top">
+               <div class="footer-column company-info">
+                   <div class="footer-logo">
+                       <div class="logo-container">
+                           <div class="logo-icon">
+                               <i class="fas fa-dumbbell"></i>
+                           </div>
+                           <div class="logo-text">
+                               <h3>SHREDZONE</h3>
+                               <p>Enter the Zone. Leave the Excuses.</p>
+                           </div>
+                       </div>
+                   </div>
+                   <p class="company-description">
+                       Transform your fitness journey with cutting-edge technology, expert guidance,
+                       and a supportive community. Join thousands who have achieved their goals with Shredzone.
+                   </p>
+                   <div class="social-links">
+                       <a href="#" class="social-link facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                       <a href="#" class="social-link twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                       <a href="#" class="social-link instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                       <a href="#" class="social-link youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                       <a href="#" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                   </div>
+               </div>
+
+               <div class="footer-column quick-links">
+                   <h4 class="footer-title">Quick Links</h4>
+                   <ul class="footer-links">
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="about.html">About Us</a></li>
+                       <li><a href="products.html">Products</a></li>
+                       <li><a href="services.html">Services</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                   </ul>
+               </div>
+
+               <div class="footer-column products-links">
+                   <h4 class="footer-title">Products</h4>
+                   <ul class="footer-links">
+                       <li><a href="#">Fitness Trackers</a></li>
+                       <li><a href="#">Protein Supplements</a></li>
+                       <li><a href="#">Strength Training</a></li>
+                       <li><a href="#">Cardio Equipment</a></li>
+                       <li><a href="#">Recovery Tools</a></li>
+                   </ul>
+               </div>
+
+               <div class="footer-column calculators-links">
+                   <h4 class="footer-title">Calculators</h4>
+                   <ul class="footer-links">
+                       <li><a href="bmi.html">BMI Calculator</a></li>
+                       <li><a href="bms.html">BMR Calculator</a></li>
+                       <li><a href="calories.html">Calorie Planner</a></li>
+                       <li><a href="diet.html">Diet Chart Generator</a></li>
+                   </ul>
+               </div>
+
+               <div class="footer-column contact-info">
+                   <h4 class="footer-title">Contact Info</h4>
+                   <div class="contact-details">
+                       <div class="contact-item">
+                           <i class="fas fa-map-marker-alt"></i>
+                           <div>
+                               <span>Address</span>
+                               <p>123 Fitness Street<br>Health City, HC 12345</p>
+                           </div>
+                       </div>
+                       <div class="contact-item">
+                           <i class="fas fa-phone"></i>
+                           <div>
+                               <span>Phone</span>
+                               <p>+1 (555) 123-4567</p>
+                           </div>
+                       </div>
+                       <div class="contact-item">
+                           <i class="fas fa-envelope"></i>
+                           <div>
+                               <span>Email</span>
+                               <p>info@shredzone.com</p>
+                           </div>
+                       </div>
+                       <div class="contact-item">
+                           <i class="fas fa-clock"></i>
+                           <div>
+                               <span>Hours</span>
+                               <p>24/7 Support Available</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="footer-middle">
+               <div class="newsletter-section">
+                   <div class="newsletter-content">
+                       <h4>Stay Updated</h4>
+                       <p>Get the latest fitness tips, product updates, and exclusive offers delivered to your inbox.</p>
+                   </div>
+                   <div class="newsletter-form">
+                       <form class="subscribe-form">
+                           <input type="email" placeholder="Enter your email address" required>
+                           <button type="submit" class="subscribe-btn">
+                               <span>Subscribe</span>
+                               <i class="fas fa-paper-plane"></i>
+                           </button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+
+           <div class="footer-bottom">
+               <div class="footer-bottom-content">
+                   <div class="copyright">
+                       <p>&copy; 2024 Shredzone. All rights reserved.</p>
+                   </div>
+                   <div class="footer-links-bottom">
+                       <a href="#">Privacy Policy</a>
+                       <a href="#">Terms of Service</a>
+                       <a href="#">Cookie Policy</a>
+                       <a href="#">Refund Policy</a>
+                   </div>
+                   <div class="payment-methods">
+                       <span>We Accept:</span>
+                       <div class="payment-icons">
+                           <i class="fab fa-cc-visa"></i>
+                           <i class="fab fa-cc-mastercard"></i>
+                           <i class="fab fa-cc-paypal"></i>
+                           <i class="fab fa-cc-stripe"></i>
+                           <i class="fab fa-cc-apple-pay"></i>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>

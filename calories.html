@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Shredzone</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Left: Logo and Brand -->
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <img src="Media/Logo.png" alt="Shredzone Logo" class="logo">
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-name">SHREDZONE</h1>
+                    <p class="brand-slogan">Enter the Zone. Leave the Excuses.</p>
+                </div>
+            </div>
+
+            <!-- Center: Navigation Menu -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="bmi.html" class="nav-link dropdown-toggle active">
+                            Calculators
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bmi.html" class="dropdown-link">BMI Calculator</a></li>
+                            <li><a href="bms.html" class="dropdown-link">BMR Calculator</a></li>
+                            <li><a href="calories.html" class="dropdown-link active">Calorie Planner</a></li>
+                            <li><a href="diet.html" class="dropdown-link">Diet Chart Generator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: Social Media Icons -->
+            <div class="nav-social">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+</nav>
+
+    <main class="calculator-page">
+        <section class="calculator-hero">
+            <div class="calculator-hero-content">
+                <span class="hero-eyebrow">Fuel Strategy • Precision Planning</span>
+                <h1 class="hero-title">Total Daily Calorie Planner & Macro Distribution Engine</h1>
+                <p class="hero-subtitle">
+                    Translate your goals into precise daily calorie targets. Project maintenance, fat loss, and lean gain
+                    numbers while auto-generating macro splits and meal timing recommendations.
+                </p>
+                <div class="calculator-hero-actions">
+                    <a href="#calories-calculator" class="primary-btn">Plan My Calories</a>
+                    <a href="services.html#plans" class="ghost-btn">Work With a Nutrition Strategist</a>
+                </div>
+                <div class="hero-statistics">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">4.1M</span>
+                        <span class="hero-stat-label">Custom Plans Delivered</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">87%</span>
+                        <span class="hero-stat-label">Clients Hit Their Calorie Targets</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">14</span>
+                        <span class="hero-stat-label">Goal Modes Supported</span>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-hero-visual">
+                <div class="hero-visual-card">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=520&h=640&fit=crop" alt="Macro meal planning">
+                    <div class="hero-visual-overlay">
+                        <div class="overlay-badge">
+                            <span>Smart Planning</span>
+                            <strong>Goal-Driven Calorie & Macro Engine</strong>
+                        </div>
+                        <ul class="overlay-features">
+                            <li><i class="fas fa-check"></i> Multi-goal calorie scheduling</li>
+                            <li><i class="fas fa-check"></i> Meal timing recommendations</li>
+                            <li><i class="fas fa-check"></i> Grocery + prep guidance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-section" id="calories-calculator">
+            <div class="calculator-wrapper">
+                <div class="calculator-form">
+                    <div class="calculator-form-header">
+                        <h2>Build Your Daily Calorie Plan</h2>
+                        <p>Use your BMR/TDEE, training schedule, and nutrition objective to compute optimal daily fuel targets.</p>
+                    </div>
+
+                    <form id="calorie-form">
+                        <div class="input-grid">
+                            <div class="input-group">
+                                <label for="calorie-bmr">BMR (kcal)</label>
+                                <input type="number" id="calorie-bmr" placeholder="Enter BMR or leave blank" min="900" max="4000">
+                            </div>
+                            <div class="input-group">
+                                <label for="calorie-tdee">TDEE (kcal)</label>
+                                <input type="number" id="calorie-tdee" placeholder="Enter TDEE or auto-estimate" min="1200" max="6000">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="goal-mode">Primary Goal</label>
+                            <select id="goal-mode">
+                                <option value="maintain" selected>Maintain & Optimize</option>
+                                <option value="mild-cut">Mild Fat Loss (−10%)</option>
+                                <option value="aggressive-cut">Aggressive Fat Loss (−20%)</option>
+                                <option value="lean-bulk">Lean Gain (+10%)</option>
+                                <option value="bulk">Accelerated Gain (+20%)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="training-days">Training Frequency</label>
+                            <select id="training-days">
+                                <option value="3" selected>3 days/week</option>
+                                <option value="4">4 days/week</option>
+                                <option value="5">5 days/week</option>
+                                <option value="6">6 days/week</option>
+                                <option value="7">7 days/week</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="macro-focus">Macro Emphasis</label>
+                            <select id="macro-focus">
+                                <option value="balanced" selected>Balanced 40/30/30</option>
+                                <option value="performance">Performance 50/25/25</option>
+                                <option value="keto">Keto 10/25/65</option>
+                                <option value="mediterranean">Mediterranean 45/30/25</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="meal-frequency">Meals per Day</label>
+                            <select id="meal-frequency">
+                                <option value="3" selected>3 meals</option>
+                                <option value="4">4 meals</option>
+                                <option value="5">5 meals</option>
+                                <option value="6">6 meals</option>
+                            </select>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="primary-btn">Compute Calorie Targets</button>
+                            <button type="button" class="ghost-btn" id="calorie-reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="calculator-results">
+                    <div class="results-summary">
+                        <div class="results-gauge">
+                            <div class="gauge-circle">
+                                <div class="gauge-fill" id="calorie-gauge-fill"></div>
+                                <div class="gauge-center">
+                                    <span class="gauge-value" id="calorie-target">2300</span>
+                                    <span class="gauge-label">Target kcal</span>
+                                </div>
+                            </div>
+                            <div class="gauge-scale">
+                                <span>Cut</span>
+                                <span>Maintain</span>
+                                <span>Performance</span>
+                                <span>Gain</span>
+                            </div>
+                        </div>
+                        <div class="summary-details">
+                            <div class="summary-item">
+                                <span class="summary-label">Maintenance Calories</span>
+                                <span class="summary-value" id="maintain-target">2300 kcal</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Goal Adjustment</span>
+                                <span class="summary-value" id="goal-adjustment">-10% deficit</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Suggested Focus</span>
+                                <span class="summary-value" id="calorie-focus">Recomposition & metabolic conditioning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="results-breakdown">
+                        <div class="breakdown-card">
+                            <h4>Macro Distribution</h4>
+                            <ul id="calorie-macro-breakdown">
+                                <li><span>Protein</span><strong id="calorie-protein">172 g</strong></li>
+                                <li><span>Fats</span><strong id="calorie-fat">77 g</strong></li>
+                                <li><span>Carbohydrates</span><strong id="calorie-carb">258 g</strong></li>
+                            </ul>
+                        </div>
+                        <div class="breakdown-card">
+                            <h4>Meal Timing Blueprint</h4>
+                            <ul id="meal-plan-breakdown">
+                                <li><span>Breakfast</span><strong id="meal-1">575 kcal</strong></li>
+                                <li><span>Lunch</span><strong id="meal-2">575 kcal</strong></li>
+                                <li><span>Dinner</span><strong id="meal-3">575 kcal</strong></li>
+                                <li><span>Snacks</span><strong id="meal-4">575 kcal</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="results-chart">
+                        <h4>Weekly Calorie Summary</h4>
+                        <div class="weekly-grid" id="weekly-grid">
+                            <div class="weekly-card">
+                                <span>Training Days</span>
+                                <strong id="training-calories">2400 kcal</strong>
+                            </div>
+                            <div class="weekly-card">
+                                <span>Rest Days</span>
+                                <strong id="rest-calories">2100 kcal</strong>
+                            </div>
+                            <div class="weekly-card">
+                                <span>Total Weekly Intake</span>
+                                <strong id="weekly-total">15,750 kcal</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-education">
+            <div class="education-grid">
+                <article class="education-card">
+                    <h3>Precision Nutrition Phasing</h3>
+                    <p>
+                        Rotate your calorie targets every 6–8 weeks to keep metabolism responsive. Integrate refeeds and
+                        diet breaks to preserve lean mass and hormone balance.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Track biofeedback (sleep, HRV, mood) weekly</li>
+                        <li><i class="fas fa-check"></i> Adjust macros ±5% based on recovery data</li>
+                        <li><i class="fas fa-check"></i> Align caloric peaks with high-output training days</li>
+                    </ul>
+                </article>
+                <article class="education-card">
+                    <h3>Fuel + Habit Stack</h3>
+                    <p>
+                        Combine targeted calories with hydration, micronutrients, and lifestyle pillars. Our coaches
+                        integrate labs and wearable data for lasting results.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Hydrate 35–45 ml/kg bodyweight daily</li>
+                        <li><i class="fas fa-check"></i> Aim for 25–30 g fiber and colorful produce</li>
+                        <li><i class="fas fa-check"></i> Anchor meals around training windows</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="calculator-cta">
+            <div class="cta-content">
+                <h2>Ready to Turn Numbers into Momentum?</h2>
+                <p>
+                    Let our nutrition architects craft weekly menus, grocery plans, and accountability systems so you
+                    can execute without guesswork.
+                </p>
+                <div class="cta-actions">
+                    <a href="services.html" class="primary-btn">Book a Nutrition Lab</a>
+                    <a href="contact.html" class="ghost-btn">Schedule a Strategy Call</a>
+                </div>
+            </div>
+            <div class="cta-visual">
+                <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&h=500&fit=crop" alt="Coach reviewing meal plan">
+                <div class="cta-badge">
+                    <i class="fas fa-utensils"></i>
+                    <span>Tailored meal playbooks</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Advanced Footer -->
+ <footer class="footer-section">
+    <div class="footer-container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <!-- Company Info -->
+            <div class="footer-column company-info">
+                <div class="footer-logo">
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>SHREDZONE</h3>
+                            <p>Enter the Zone. Leave the Excuses.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="company-description">
+                    Transform your fitness journey with cutting-edge technology, expert guidance, 
+                    and a supportive community. Join thousands who have achieved their goals with Shredzone.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column quick-links">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="footer-column products-links">
+                <h4 class="footer-title">Products</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Fitness Trackers</a></li>
+                    <li><a href="#">Protein Supplements</a></li>
+                    <li><a href="#">Strength Training</a></li>
+                    <li><a href="#">Cardio Equipment</a></li>
+                    <li><a href="#">Recovery Tools</a></li>
+                </ul>
+            </div>
+
+            <!-- Calculators -->
+            <div class="footer-column calculators-links">
+                <h4 class="footer-title">Calculators</h4>
+                <ul class="footer-links">
+                    <li><a href="bmi.html">BMI Calculator</a></li>
+                    <li><a href="bms.html">BMR Calculator</a></li>
+                    <li><a href="calories.html">Calorie Planner</a></li>
+                    <li><a href="diet.html">Diet Chart Generator</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column contact-info">
+                <h4 class="footer-title">Contact Info</h4>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span>Address</span>
+                            <p>123 Fitness Street<br>Health City, HC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span>Phone</span>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span>Email</span>
+                            <p>info@shredzone.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <span>Hours</span>
+                            <p>24/7 Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Middle -->
+        <div class="footer-middle">
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest fitness tips, product updates, and exclusive offers delivered to your inbox.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="subscribe-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2024 Shredzone. All rights reserved.</p>
+                </div>
+                <div class="footer-links-bottom">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+                <div class="payment-methods">
+                    <span>We Accept:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-stripe"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="Script.js"></script>
+</body>
+</html>

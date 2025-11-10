@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Shredzone</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Left: Logo and Brand -->
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <img src="Media/Logo.png" alt="Shredzone Logo" class="logo">
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-name">SHREDZONE</h1>
+                    <p class="brand-slogan">Enter the Zone. Leave the Excuses.</p>
+                </div>
+            </div>
+
+            <!-- Center: Navigation Menu -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link active">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="bmi.html" class="nav-link dropdown-toggle">
+                            Calculators
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bmi.html" class="dropdown-link">BMI Calculator</a></li>
+                            <li><a href="bms.html" class="dropdown-link">BMR Calculator</a></li>
+                            <li><a href="calories.html" class="dropdown-link">Calorie Planner</a></li>
+                            <li><a href="diet.html" class="dropdown-link">Diet Chart Generator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: Social Media Icons -->
+            <div class="nav-social">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+</nav>
+
+    <main class="services-page">
+        <section class="services-hero">
+            <div class="services-hero-content">
+                <span class="hero-eyebrow">Elite Coaching • Anywhere</span>
+                <h1 class="hero-title">High-Performance Services Engineered for Real-World Results</h1>
+                <p class="hero-subtitle">
+                    From world-class coaching to enterprise wellness labs, our multidisciplinary team delivers
+                    full-stack services that integrate training, nutrition, recovery, and data science. Choose
+                    immersive on-site experiences or hyper-personal digital protocols—every engagement is tailored,
+                    measurable, and battle-tested with elite athletes worldwide.
+                </p>
+                <div class="services-hero-actions">
+                    <a href="#services-catalog" class="primary-btn">Explore Signature Programs</a>
+                    <a href="#consultation" class="ghost-btn">Book a 30-Min Strategy Call</a>
+                </div>
+                <div class="services-hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">18+</span>
+                        <span class="hero-stat-label">Specialist Coaches & Clinicians</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">94%</span>
+                        <span class="hero-stat-label">Client Retention Across All Programs</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">42</span>
+                        <span class="hero-stat-label">Corporate Wellness Deployments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="services-hero-visual">
+                <div class="hero-visual-card">
+                    <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?w=500&h=600&fit=crop" alt="Coach working with athlete">
+                    <div class="hero-visual-overlay">
+                        <div class="overlay-badge">
+                            <span>Featured Service</span>
+                            <strong>Hybrid Performance Lab</strong>
+                        </div>
+                        <ul class="overlay-features">
+                            <li><i class="fas fa-check"></i> Metabolic & movement screening</li>
+                            <li><i class="fas fa-check"></i> AI-driven microcycle design</li>
+                            <li><i class="fas fa-check"></i> Weekly data review + adjustments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-overview">
+            <div class="services-overview-card">
+                <div class="overview-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h3>1:1 Elite Coaching</h3>
+                <p>Custom periodization, daily accountability, and concierge recovery management for competitive athletes and executives.</p>
+            </div>
+            <div class="services-overview-card">
+                <div class="overview-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Team & Group Systems</h3>
+                <p>High-output programming, practice integration, and remote monitoring for sport teams, academies, and studios.</p>
+            </div>
+            <div class="services-overview-card">
+                <div class="overview-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>Corporate Wellness</h3>
+                <p>Multi-location rollout, health analytics, and leadership performance labs for enterprise clientele.</p>
+            </div>
+            <div class="services-overview-card">
+                <div class="overview-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3>Recovery & Lab Testing</h3>
+                <p>Metabolic testing, blood work integration, sleep diagnostics, and corrective protocols delivered on-site or virtually.</p>
+            </div>
+        </section>
+
+        <section class="services-catalog" id="services-catalog">
+            <div class="section-header">
+                <span class="eyebrow">Signature Programs</span>
+                <h2>Curated Service Lines for Every Training Environment</h2>
+                <p>Use the filters to tailor services by training medium, outcome, and delivery model. All services include onboarding, biometric integration, and adaptive programming.</p>
+            </div>
+
+            <div class="services-filter-bar">
+                <div class="service-filter-chips" role="tablist" aria-label="Service categories">
+                    <button class="service-filter-chip active" data-filter="all">All Services</button>
+                    <button class="service-filter-chip" data-filter="in-person">In-Person</button>
+                    <button class="service-filter-chip" data-filter="remote">Remote / Digital</button>
+                    <button class="service-filter-chip" data-filter="corporate">Corporate</button>
+                    <button class="service-filter-chip" data-filter="recovery">Recovery Lab</button>
+                </div>
+                <div class="service-sort-control">
+                    <label for="service-sort">Sort by</label>
+                    <select id="service-sort">
+                        <option value="highlight">Featured</option>
+                        <option value="duration">Session Duration</option>
+                        <option value="intensity">Intensity</option>
+                        <option value="investment">Investment</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card" data-order="1" data-service-type="in-person" data-duration="90" data-intensity="elite" data-investment="349">
+                    <div class="service-card-header">
+                        <span class="service-badge">Flagship</span>
+                        <h3>Hybrid Performance Lab</h3>
+                        <p>On-site lab sessions combining force-plate testing, high-velocity strength work, and individualized energy system training.</p>
+                    </div>
+                    <ul class="service-card-features">
+                        <li><i class="fas fa-check"></i> Bi-weekly diagnostics + readiness scoring</li>
+                        <li><i class="fas fa-check"></i> Manual therapy & recovery stack integration</li>
+                        <li><i class="fas fa-check"></i> Dedicated performance architect + analyst</li>
+                    </ul>
+                    <div class="service-card-footer">
+                        <div class="service-meta">
+                            <span><i class="fas fa-stopwatch"></i> 90 min sessions</span>
+                            <span><i class="fas fa-map-marker-alt"></i> On-site, select cities</span>
+                        </div>
+                        <div class="service-price">
+                            <span class="service-price-label">Starting at</span>
+                            <span class="service-price-value" data-billed-monthly="$349 / session" data-billed-quarterly="$999 / month">$
+                                349 / session</span>
+                        </div>
+                        <button class="ghost-btn service-intake-btn" data-service="Hybrid Performance Lab">Request Blueprint</button>
+                    </div>
+                </article>
+
+                <article class="service-card" data-order="2" data-service-type="remote" data-duration="60" data-intensity="advanced" data-investment="219">
+                    <div class="service-card-header">
+                        <span class="service-badge digital">Digital Pro</span>
+                        <h3>Remote Elite Coaching</h3>
+                        <p>Daily remote oversight, video review, and adaptive programming for athletes, executives, and hybrid lifters worldwide.</p>
+                    </div>
+                    <ul class="service-card-features">
+                        <li><i class="fas fa-check"></i> Video breakdown + augmented feedback daily</li>
+                        <li><i class="fas fa-check"></i> Integrated wearable + sleep data analytics</li>
+                        <li><i class="fas fa-check"></i> 24-hour slack line with coaching team</li>
+                    </ul>
+                    <div class="service-card-footer">
+                        <div class="service-meta">
+                            <span><i class="fas fa-globe"></i> Delivered globally</span>
+                            <span><i class="fas fa-sync-alt"></i> Daily iterations</span>
+                        </div>
+                        <div class="service-price">
+                            <span class="service-price-label">Monthly retainer</span>
+                            <span class="service-price-value" data-billed-monthly="$219" data-billed-quarterly="$599">$
+                                219</span>
+                        </div>
+                        <button class="primary-btn service-intake-btn" data-service="Remote Elite Coaching">Start Remote Lab</button>
+                    </div>
+                </article>
+
+                <article class="service-card" data-order="3" data-service-type="in-person" data-duration="75" data-intensity="advanced" data-investment="169">
+                    <div class="service-card-header">
+                        <span class="service-badge">Studio</span>
+                        <h3>Small Group Strength Pods</h3>
+                        <p>Limited 6-person pods with advanced coaching, shared data dashboards, and progressive phases every six weeks.</p>
+                    </div>
+                    <ul class="service-card-features">
+                        <li><i class="fas fa-check"></i> Individual strength & hypertrophy lanes</li>
+                        <li><i class="fas fa-check"></i> Recovery mobility micro-sessions included</li>
+                        <li><i class="fas fa-check"></i> Quarterly progress summits + labs</li>
+                    </ul>
+                    <div class="service-card-footer">
+                        <div class="service-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> All major training centers</span>
+                            <span><i class="fas fa-users"></i> 6 athlete capacity</span>
+                        </div>
+                        <div class="service-price">
+                            <span class="service-price-label">Per athlete / month</span>
+                            <span class="service-price-value" data-billed-monthly="$169" data-billed-quarterly="$459">$
+                                169</span>
+                        </div>
+                        <button class="ghost-btn service-intake-btn" data-service="Small Group Strength Pods">Reserve a Pod</button>
+                    </div>
+                </article>
+
+                <article class="service-card" data-order="4" data-service-type="corporate" data-duration="120" data-intensity="professional" data-investment="899">
+                    <div class="service-card-header">
+                        <span class="service-badge corporate">Enterprise</span>
+                        <h3>Corporate Wellness Command Center</h3>
+                        <p>Enterprise rollout featuring wellness labs, leadership performance programs, and cross-site analytics dashboards.</p>
+                    </div>
+                    <ul class="service-card-features">
+                        <li><i class="fas fa-check"></i> Quarterly executive performance labs</li>
+                        <li><i class="fas fa-check"></i> App-embedded engagement campaigns</li>
+                        <li><i class="fas fa-check"></i> Global coverage & concierge support</li>
+                    </ul>
+                    <div class="service-card-footer">
+                        <div class="service-meta">
+                            <span><i class="fas fa-building"></i> 200+ employees</span>
+                            <span><i class="fas fa-chart-bar"></i> KPI dashboards</span>
+                        </div>
+                        <div class="service-price">
+                            <span class="service-price-label">Per site / month</span>
+                            <span class="service-price-value" data-billed-monthly="$899" data-billed-quarterly="$2450">$
+                                899</span>
+                        </div>
+                        <button class="primary-btn service-intake-btn" data-service="Corporate Wellness Command Center">Schedule Enterprise Demo</button>
+                    </div>
+                </article>
+
+                <article class="service-card" data-order="5" data-service-type="recovery" data-duration="60" data-intensity="professional" data-investment="129">
+                    <div class="service-card-header">
+                        <span class="service-badge recovery">Recovery Lab</span>
+                        <h3>Integrated Recovery Protocols</h3>
+                        <p>Modular recovery experiences combining infrared therapy, pneumatic compression, and guided parasympathetic work.</p>
+                    </div>
+                    <ul class="service-card-features">
+                        <li><i class="fas fa-check"></i> Personalized recovery scoring</li>
+                        <li><i class="fas fa-check"></i> Sleep and HRV reprogramming</li>
+                        <li><i class="fas fa-check"></i> Take-home recovery kits + education</li>
+                    </ul>
+                    <div class="service-card-footer">
+                        <div class="service-meta">
+                            <span><i class="fas fa-heartbeat"></i> Doctor-led protocols</span>
+                            <span><i class="fas fa-briefcase-medical"></i> At-home plans available</span>
+                        </div>
+                        <div class="service-price">
+                            <span class="service-price-label">Per protocol</span>
+                            <span class="service-price-value" data-billed-monthly="$129" data-billed-quarterly="$349">$
+                                129</span>
+                        </div>
+                        <button class="ghost-btn service-intake-btn" data-service="Integrated Recovery Protocols">Book Recovery Lab</button>
+                    </div>
+                </article>
+
+                <article class="service-card" data-order="6" data-service-type="remote" data-duration="45" data-intensity="professional" data-investment="149">
+                    <div class="service-card-header">
+                        <span class="service-badge digital">Macro Coaching</span>
+                        <h3>Precision Nutrition & Biomarkers</h3>
+                        <p>Registered dietitians and performance doctors analyze labs, wearables, and lifestyle data to craft personalized nutrition systems.</p>
+                    </div>
+                    <ul class="service-card-features">
+                        <li><i class="fas fa-check"></i> Quarterly bloodwork & continuous tracking</li>
+                        <li><i class="fas fa-check"></i> Grocery + supplement protocols aligned to goals</li>
+                        <li><i class="fas fa-check"></i> Weekly check-ins & habit dashboards</li>
+                    </ul>
+                    <div class="service-card-footer">
+                        <div class="service-meta">
+                            <span><i class="fas fa-video"></i> Virtual consultations</span>
+                            <span><i class="fas fa-vials"></i> Kit shipping worldwide</span>
+                        </div>
+                        <div class="service-price">
+                            <span class="service-price-label">Monthly retainer</span>
+                            <span class="service-price-value" data-billed-monthly="$149" data-billed-quarterly="$399">$
+                                149</span>
+                        </div>
+                        <button class="primary-btn service-intake-btn" data-service="Precision Nutrition & Biomarkers">Start Nutrition Lab</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="services-pricing" id="plans">
+            <div class="section-header">
+                <span class="eyebrow">Flexible Engagements</span>
+                <h2>Select a Service Plan That Scales with Your Goals</h2>
+                <p>Switch between monthly and quarterly billing to unlock enhanced accountability, expanded analytics, and exclusive recovery integrations.</p>
+            </div>
+            <div class="pricing-toggle">
+                <span>Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pricing-toggle-input">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span>Quarterly (save up to 15%)</span>
+            </div>
+            <div class="pricing-grid">
+                <article class="pricing-card" data-plan="foundation">
+                    <div class="pricing-header">
+                        <span class="pricing-badge">Foundation</span>
+                        <h3>Performance Launch</h3>
+                        <p>Perfect for motivated individuals ready to professionalize their training and recovery routines.</p>
+                    </div>
+                    <div class="pricing-value" data-monthly="$349" data-quarterly="$949">$349</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Weekly 1:1 coaching + personalized programs</li>
+                        <li><i class="fas fa-check"></i> Monthly recovery lab session or telehealth</li>
+                        <li><i class="fas fa-check"></i> Access to training community & live workshops</li>
+                    </ul>
+                    <button class="primary-btn pricing-btn" data-plan-name="Performance Launch">Get Started</button>
+                </article>
+                <article class="pricing-card highlighted" data-plan="elevate">
+                    <div class="pricing-header">
+                        <span class="pricing-badge">Most Popular</span>
+                        <h3>Hybrid Elevate</h3>
+                        <p>Advanced support for athletes or leaders balancing competitive output with intense schedules.</p>
+                    </div>
+                    <div class="pricing-value" data-monthly="$649" data-quarterly="$1799">$649</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Daily program optimization + video breakdown</li>
+                        <li><i class="fas fa-check"></i> Bi-weekly recovery labs + biomarker sync</li>
+                        <li><i class="fas fa-check"></i> Dedicated performance architect + analyst</li>
+                    </ul>
+                    <button class="primary-btn pricing-btn" data-plan-name="Hybrid Elevate">Reserve Your Slot</button>
+                </article>
+                <article class="pricing-card" data-plan="enterprise">
+                    <div class="pricing-header">
+                        <span class="pricing-badge">Enterprise</span>
+                        <h3>Corporate Command Center</h3>
+                        <p>Comprehensive wellness operations built for distributed workforces, studios, and sporting organizations.</p>
+                    </div>
+                    <div class="pricing-value" data-monthly="$1,499" data-quarterly="$4,199">$1,499</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full-service rollout & communication strategy</li>
+                        <li><i class="fas fa-check"></i> Clinical & coaching staff across time zones</li>
+                        <li><i class="fas fa-check"></i> Executive reporting & ROI analytics dashboard</li>
+                    </ul>
+                    <button class="ghost-btn pricing-btn" data-plan-name="Corporate Command Center">Request Proposal</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="services-process">
+            <div class="section-header">
+                <span class="eyebrow">How It Works</span>
+                <h2>A Proven Framework That Scales with You</h2>
+                <p>Every engagement begins with deep diagnostics, followed by modular phases designed to maximize impact while adapting to your calendar and resources.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <span class="step-index">01</span>
+                    <h3>Diagnostics & Audit</h3>
+                    <p>Comprehensive intake covering goals, bottlenecks, schedule, and available tech stack. Optional lab testing and movement screens for elite tiers.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-index">02</span>
+                    <h3>Blueprint & Launch</h3>
+                    <p>High-precision roadmap covering periodization, nutrition, recovery, and KPIs. We align tools, accountability cadence, and deliverable structure.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-index">03</span>
+                    <h3>Adaptive Execution</h3>
+                    <p>Weekly and monthly recalibration cycles guided by data, subjective feedback, and strategic adjustments to maintain momentum and resilience.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-index">04</span>
+                    <h3>Review & Scale</h3>
+                    <p>Quarterly deep-dives, leadership reports, and expansion planning. Upgrade to enterprise-level solutions or integrate new teams with ease.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-faq" id="consultation">
+            <div class="section-header">
+                <span class="eyebrow">Questions & Insights</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Get clarity on onboarding, tech requirements, deliverables, and measurable outcomes. Need more detail? We’ll walk you through case studies relevant to your goals.</p>
+            </div>
+            <div class="faq-grid">
+                <article class="faq-item">
+                    <button class="faq-toggle">
+                        <span>How fast can I start after the initial consult?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>Most remote engagements launch within 5 business days following intake, diagnostics, and schedule alignment. On-site deployments typically begin within 2–3 weeks once facility and staffing logistics are confirmed.</p>
+                    </div>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-toggle">
+                        <span>Can services integrate with our existing tech stack?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>Yes—we integrate with leading wearables, force platforms, corporate wellness portals, and EHR systems. Custom API work is available for enterprise partners to unify dashboards and reporting.</p>
+                    </div>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-toggle">
+                        <span>Do you offer short-term intensives or camps?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>We run bespoke training camps and executive resets ranging from 2-day immersives to 6-week accelerators. These include lodging coordination, chef services, and daily diagnostics.</p>
+                    </div>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-toggle">
+                        <span>What does success tracking look like?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>Each engagement includes a custom scorecard covering leading indicators (training compliance, HRV, sleep, readiness) and lagging indicators (performance PRs, body composition, medical biomarkers).</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="services-cta">
+            <div class="cta-content">
+                <h2>Ready to Engineer Your Next Performance Breakthrough?</h2>
+                <p>Our architects will design the perfect mix of coaching, recovery, and analytics. Let’s build a system that keeps you and your team winning for years.</p>
+                <div class="cta-actions">
+                    <a href="contact.html" class="primary-btn">Book a Strategy Session</a>
+                    <a href="mailto:info@shredzone.com" class="ghost-btn">Email Our Concierge</a>
+                </div>
+            </div>
+            <div class="cta-visual">
+                <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?w=600&h=500&fit=crop" alt="Athletes training with coach">
+                <div class="cta-badge">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Data-backed performance</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Advanced Footer -->
+ <footer class="footer-section">
+    <div class="footer-container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <!-- Company Info -->
+            <div class="footer-column company-info">
+                <div class="footer-logo">
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>SHREDZONE</h3>
+                            <p>Enter the Zone. Leave the Excuses.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="company-description">
+                    Transform your fitness journey with cutting-edge technology, expert guidance, 
+                    and a supportive community. Join thousands who have achieved their goals with Shredzone.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column quick-links">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="footer-column products-links">
+                <h4 class="footer-title">Products</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Fitness Trackers</a></li>
+                    <li><a href="#">Protein Supplements</a></li>
+                    <li><a href="#">Strength Training</a></li>
+                    <li><a href="#">Cardio Equipment</a></li>
+                    <li><a href="#">Recovery Tools</a></li>
+                </ul>
+            </div>
+
+            <!-- Calculators -->
+            <div class="footer-column calculators-links">
+                <h4 class="footer-title">Calculators</h4>
+                <ul class="footer-links">
+                    <li><a href="bmi.html">BMI Calculator</a></li>
+                    <li><a href="bms.html">BMR Calculator</a></li>
+                    <li><a href="calories.html">Calorie Planner</a></li>
+                    <li><a href="diet.html">Diet Chart Generator</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column contact-info">
+                <h4 class="footer-title">Contact Info</h4>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span>Address</span>
+                            <p>123 Fitness Street<br>Health City, HC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span>Phone</span>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span>Email</span>
+                            <p>info@shredzone.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <span>Hours</span>
+                            <p>24/7 Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Middle -->
+        <div class="footer-middle">
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest fitness tips, product updates, and exclusive offers delivered to your inbox.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="subscribe-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2024 Shredzone. All rights reserved.</p>
+                </div>
+                <div class="footer-links-bottom">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+                <div class="payment-methods">
+                    <span>We Accept:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-stripe"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="Script.js"></script>
+</body>
+</html>

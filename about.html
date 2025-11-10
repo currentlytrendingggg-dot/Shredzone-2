@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Shredzone</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Left: Logo and Brand -->
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <img src="Media/Logo.png" alt="Shredzone Logo" class="logo">
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-name">SHREDZONE</h1>
+                    <p class="brand-slogan">Enter the Zone. Leave the Excuses.</p>
+                </div>
+            </div>
+
+            <!-- Center: Navigation Menu -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="bmi.html" class="nav-link dropdown-toggle">
+                            Calculators
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bmi.html" class="dropdown-link">BMI Calculator</a></li>
+                            <li><a href="bms.html" class="dropdown-link">BMR Calculator</a></li>
+                            <li><a href="calories.html" class="dropdown-link">Calorie Planner</a></li>
+                            <li><a href="diet.html" class="dropdown-link">Diet Chart Generator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: Social Media Icons -->
+            <div class="nav-social">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-main">About</span>
+                        <span class="title-accent">Shredzone</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        We're revolutionizing fitness through innovation, technology, and unwavering commitment 
+                        to helping you achieve your goals. Enter the zone where excuses don't exist.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50000">0</div>
+                            <div class="stat-label">Happy Members</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="98">0</div>
+                            <div class="stat-label">Success Rate %</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="24">0</div>
+                            <div class="stat-label">Hours Support</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-dumbbell"></i>
+                            <span>Strength</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-heartbeat"></i>
+                            <span>Cardio</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-apple-alt"></i>
+                            <span>Nutrition</span>
+                        </div>
+                        <div class="floating-card card-4">
+                            <i class="fas fa-brain"></i>
+                            <span>Mindset</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="our-story">
+            <div class="story-container">
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2 class="section-title">Our Story</h2>
+                        <p class="story-description">
+                            Founded in 2019, Shredzone began as a vision to democratize fitness and make 
+                            professional-grade training accessible to everyone. What started as a small 
+                            team of passionate fitness enthusiasts has grown into a comprehensive platform 
+                            that transforms lives daily.
+                        </p>
+                        <p class="story-description">
+                            Our journey began when our founder, after struggling with traditional fitness 
+                            approaches, realized the need for a more personalized, technology-driven solution. 
+                            Today, we're proud to serve thousands of members worldwide, helping them achieve 
+                            their fitness goals through innovative tools and expert guidance.
+                        </p>
+                        <div class="story-features">
+                            <div class="feature-item">
+                                <i class="fas fa-rocket"></i>
+                                <div>
+                                    <h4>Innovation First</h4>
+                                    <p>Cutting-edge technology meets proven fitness science</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h4>Community Driven</h4>
+                                    <p>Supportive community that celebrates every milestone</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <h4>Results Focused</h4>
+                                    <p>Data-driven approach to maximize your progress</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-visual">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">2019</div>
+                                <div class="timeline-content">
+                                    <h4>Company Founded</h4>
+                                    <p>Started with a vision to revolutionize fitness</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2020</div>
+                                <div class="timeline-content">
+                                    <h4>Platform Launch</h4>
+                                    <p>Launched our first digital fitness platform</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2021</div>
+                                <div class="timeline-content">
+                                    <h4>AI Integration</h4>
+                                    <p>Introduced AI-powered personalized training</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2022</div>
+                                <div class="timeline-content">
+                                    <h4>Global Expansion</h4>
+                                    <p>Expanded to serve members worldwide</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2023</div>
+                                <div class="timeline-content">
+                                    <h4>Product Line</h4>
+                                    <p>Launched comprehensive product ecosystem</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2024</div>
+                                <div class="timeline-content">
+                                    <h4>Future Vision</h4>
+                                    <p>Continuing to innovate and transform lives</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder Section -->
+        <section class="founder-section">
+            <div class="founder-container">
+                <div class="founder-content">
+                    <div class="founder-image">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Alex Johnson - Founder & CEO" loading="lazy">
+                            <div class="image-overlay">
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="founder-info">
+                        <div class="founder-badge">Founder & CEO</div>
+                        <h2 class="founder-name">Alex Johnson</h2>
+                        <p class="founder-title">Fitness Visionary & Technology Innovator</p>
+                        <p class="founder-description">
+                            Alex Johnson is a certified personal trainer with over 10 years of experience 
+                            in the fitness industry. After struggling with traditional fitness approaches 
+                            and witnessing the limitations of one-size-fits-all solutions, Alex founded 
+                            Shredzone with a mission to make personalized fitness accessible to everyone.
+                        </p>
+                        <p class="founder-description">
+                            With a background in computer science and a passion for fitness, Alex combines 
+                            cutting-edge technology with proven training methodologies to create solutions 
+                            that deliver real results. His vision has helped thousands of people transform 
+                            their lives and achieve their fitness goals.
+                        </p>
+                        <div class="founder-credentials">
+                            <div class="credential-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>MS Computer Science, Stanford University</span>
+                            </div>
+                            <div class="credential-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certified Personal Trainer (NASM)</span>
+                            </div>
+                            <div class="credential-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>Former Competitive Bodybuilder</span>
+                            </div>
+                        </div>
+                        <div class="founder-quote">
+                            <blockquote>
+                                "Fitness isn't just about physical transformation—it's about unlocking 
+                                your true potential and becoming the best version of yourself."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="team-container">
+                <div class="section-header">
+                    <h2 class="section-title">Meet Our Team</h2>
+                    <p class="section-subtitle">
+                        Our diverse team of experts is dedicated to helping you achieve your fitness goals
+                    </p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop" alt="Sarah Chen - Head of Product" loading="lazy">
+                            <div class="member-overlay">
+                                <div class="member-social">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Sarah Chen</h3>
+                            <p class="member-role">Head of Product</p>
+                            <p class="member-description">
+                                Product strategist with 8+ years experience in fitness technology
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" alt="Marcus Rodriguez - Lead Trainer" loading="lazy">
+                            <div class="member-overlay">
+                                <div class="member-social">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Marcus Rodriguez</h3>
+                            <p class="member-role">Lead Trainer</p>
+                            <p class="member-description">
+                                Certified trainer specializing in strength and conditioning
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="Emily Watson - Nutritionist" loading="lazy">
+                            <div class="member-overlay">
+                                <div class="member-social">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Emily Watson</h3>
+                            <p class="member-role">Lead Nutritionist</p>
+                            <p class="member-description">
+                                Registered dietitian with expertise in sports nutrition
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop" alt="David Kim - CTO" loading="lazy">
+                            <div class="member-overlay">
+                                <div class="member-social">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">David Kim</h3>
+                            <p class="member-role">Chief Technology Officer</p>
+                            <p class="member-description">
+                                Tech leader driving innovation in fitness applications
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop" alt="Lisa Thompson - Marketing Director" loading="lazy">
+                            <div class="member-overlay">
+                                <div class="member-social">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Lisa Thompson</h3>
+                            <p class="member-role">Marketing Director</p>
+                            <p class="member-description">
+                                Creative strategist building our fitness community
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="James Wilson - Customer Success" loading="lazy">
+                            <div class="member-overlay">
+                                <div class="member-social">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">James Wilson</h3>
+                            <p class="member-role">Customer Success Manager</p>
+                            <p class="member-description">
+                                Ensuring every member achieves their fitness goals
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Structure Section -->
+        <section class="company-structure">
+            <div class="structure-container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Organization</h2>
+                    <p class="section-subtitle">
+                        A well-structured team dedicated to your fitness success
+                    </p>
+                </div>
+                <div class="structure-chart">
+                    <div class="org-level level-1">
+                        <div class="org-member ceo">
+                            <div class="member-card">
+                                <div class="member-avatar">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop" alt="Alex Johnson">
+                                </div>
+                                <div class="member-details">
+                                    <h4>Alex Johnson</h4>
+                                    <p>CEO & Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="org-level level-2">
+                        <div class="org-member">
+                            <div class="member-card">
+                                <div class="member-avatar">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop" alt="David Kim">
+                                </div>
+                                <div class="member-details">
+                                    <h4>David Kim</h4>
+                                    <p>CTO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="org-member">
+                            <div class="member-card">
+                                <div class="member-avatar">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop" alt="Sarah Chen">
+                                </div>
+                                <div class="member-details">
+                                    <h4>Sarah Chen</h4>
+                                    <p>Head of Product</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="org-member">
+                            <div class="member-card">
+                                <div class="member-avatar">
+                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop" alt="Lisa Thompson">
+                                </div>
+                                <div class="member-details">
+                                    <h4>Lisa Thompson</h4>
+                                    <p>Marketing Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="org-level level-3">
+                        <div class="org-member">
+                            <div class="member-card">
+                                <div class="member-avatar">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop" alt="Marcus Rodriguez">
+                                </div>
+                                <div class="member-details">
+                                    <h4>Marcus Rodriguez</h4>
+                                    <p>Lead Trainer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="org-member">
+                            <div class="member-card">
+                                <div class="member-avatar">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop" alt="Emily Watson">
+                                </div>
+                                <div class="member-details">
+                                    <h4>Emily Watson</h4>
+                                    <p>Lead Nutritionist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="org-member">
+                            <div class="member-card">
+                                <div class="member-avatar">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop" alt="James Wilson">
+                                </div>
+                                <div class="member-details">
+                                    <h4>James Wilson</h4>
+                                    <p>Customer Success</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <div class="values-container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Core Values</h2>
+                    <p class="section-subtitle">
+                        The principles that guide everything we do
+                    </p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="value-title">Excellence</h3>
+                        <p class="value-description">
+                            We strive for excellence in everything we do, from our technology 
+                            to our customer service, ensuring the highest quality experience.
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="value-title">Passion</h3>
+                        <p class="value-description">
+                            Our passion for fitness and helping others drives us to continuously 
+                            innovate and improve our platform and services.
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="value-title">Integrity</h3>
+                        <p class="value-description">
+                            We maintain the highest standards of integrity in all our interactions, 
+                            building trust through transparency and honesty.
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="value-title">Innovation</h3>
+                        <p class="value-description">
+                            We embrace innovation and cutting-edge technology to provide 
+                            the most effective fitness solutions for our members.
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="value-title">Community</h3>
+                        <p class="value-description">
+                            We believe in the power of community and support, creating 
+                            an environment where everyone can thrive and succeed together.
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="value-title">Results</h3>
+                        <p class="value-description">
+                            We are committed to delivering measurable results and helping 
+                            our members achieve their fitness goals through proven methods.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Statement -->
+        <section class="mission-section">
+            <div class="mission-container">
+                <div class="mission-content">
+                    <div class="mission-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="mission-text">
+                        <h2>Our Mission</h2>
+                        <p>
+                            To empower individuals worldwide to achieve their fitness goals through 
+                            innovative technology, expert guidance, and a supportive community that 
+                            celebrates every milestone on the journey to a healthier, stronger, and 
+                            more confident you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ <!-- Advanced Footer -->
+ <footer class="footer-section">
+    <div class="footer-container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <!-- Company Info -->
+            <div class="footer-column company-info">
+                <div class="footer-logo">
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>SHREDZONE</h3>
+                            <p>Enter the Zone. Leave the Excuses.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="company-description">
+                    Transform your fitness journey with cutting-edge technology, expert guidance, 
+                    and a supportive community. Join thousands who have achieved their goals with Shredzone.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column quick-links">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="footer-column products-links">
+                <h4 class="footer-title">Products</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Fitness Trackers</a></li>
+                    <li><a href="#">Protein Supplements</a></li>
+                    <li><a href="#">Strength Training</a></li>
+                    <li><a href="#">Cardio Equipment</a></li>
+                    <li><a href="#">Recovery Tools</a></li>
+                </ul>
+            </div>
+
+            <!-- Calculators -->
+            <div class="footer-column calculators-links">
+                <h4 class="footer-title">Calculators</h4>
+                <ul class="footer-links">
+                    <li><a href="bmi.html">BMI Calculator</a></li>
+                    <li><a href="bms.html">BMR Calculator</a></li>
+                    <li><a href="calories.html">Calorie Planner</a></li>
+                    <li><a href="diet.html">Diet Chart Generator</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column contact-info">
+                <h4 class="footer-title">Contact Info</h4>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span>Address</span>
+                            <p>123 Fitness Street<br>Health City, HC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span>Phone</span>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span>Email</span>
+                            <p>info@shredzone.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <span>Hours</span>
+                            <p>24/7 Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Middle -->
+        <div class="footer-middle">
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest fitness tips, product updates, and exclusive offers delivered to your inbox.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="subscribe-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2024 Shredzone. All rights reserved.</p>
+                </div>
+                <div class="footer-links-bottom">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+                <div class="payment-methods">
+                    <span>We Accept:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-stripe"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="Script.js"></script>
+</body>
+</html>

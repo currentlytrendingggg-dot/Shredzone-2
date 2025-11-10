@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Shredzone</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Left: Logo and Brand -->
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <img src="Media/Logo.png" alt="Shredzone Logo" class="logo">
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-name">SHREDZONE</h1>
+                    <p class="brand-slogan">Enter the Zone. Leave the Excuses.</p>
+                </div>
+            </div>
+
+            <!-- Center: Navigation Menu -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="bmi.html" class="nav-link dropdown-toggle active">
+                            Calculators
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bmi.html" class="dropdown-link">BMI Calculator</a></li>
+                            <li><a href="bms.html" class="dropdown-link active">BMR Calculator</a></li>
+                            <li><a href="calories.html" class="dropdown-link">Calorie Planner</a></li>
+                            <li><a href="diet.html" class="dropdown-link">Diet Chart Generator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: Social Media Icons -->
+            <div class="nav-social">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+</nav>
+
+    <main class="calculator-page">
+        <section class="calculator-hero">
+            <div class="calculator-hero-content">
+                <span class="hero-eyebrow">Metabolism • Daily Energy Blueprint</span>
+                <h1 class="hero-title">Advanced BMR Calculator & Total Energy Forecaster</h1>
+                <p class="hero-subtitle">
+                    Discover how many calories your body burns at rest, project total daily energy expenditure, and dial in
+                    intelligent nutrition targets for sustainable performance, fat loss, or lean mass gain.
+                </p>
+                <div class="calculator-hero-actions">
+                    <a href="#bmr-calculator" class="primary-btn">Calculate My BMR</a>
+                    <a href="services.html#plans" class="ghost-btn">Build a Coaching Plan</a>
+                </div>
+                <div class="hero-statistics">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">6.5M</span>
+                        <span class="hero-stat-label">Daily Energy Plans Generated</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">+92%</span>
+                        <span class="hero-stat-label">Adherence with Macro Coaching</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">30+</span>
+                        <span class="hero-stat-label">Activity Profiles Supported</span>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-hero-visual">
+                <div class="hero-visual-card">
+                    <img src="https://images.unsplash.com/photo-1541600744-09962f1eea9a?w=520&h=640&fit=crop" alt="Metabolic assessment">
+                    <div class="hero-visual-overlay">
+                        <div class="overlay-badge">
+                            <span>Metabolic Snapshot</span>
+                            <strong>Basal & Active Energy Mapping</strong>
+                        </div>
+                        <ul class="overlay-features">
+                            <li><i class="fas fa-check"></i> Resting metabolic rate trends</li>
+                            <li><i class="fas fa-check"></i> Activity-specific calorie burn</li>
+                            <li><i class="fas fa-check"></i> Smart macro auto-adjustments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-section" id="bmr-calculator">
+            <div class="calculator-wrapper">
+                <div class="calculator-form">
+                    <div class="calculator-form-header">
+                        <h2>Calculate Your BMR</h2>
+                        <p>Use the Mifflin–St Jeor equation for precise basal metabolic rate estimates. Adjust your activity profile to forecast total daily energy needs.</p>
+                    </div>
+
+                    <form id="bmr-form">
+                        <div class="unit-toggle">
+                            <span>Measurement System</span>
+                            <div class="unit-toggle-options">
+                                <label>
+                                    <input type="radio" name="bmr-unit" value="metric" checked>
+                                    <span>Metric (cm, kg)</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="bmr-unit" value="imperial">
+                                    <span>Imperial (ft/in, lbs)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="input-group bmr-metric-group" data-group="metric">
+                            <label for="bmr-height-cm">Height (cm)</label>
+                            <div class="input-with-range">
+                                <input type="number" id="bmr-height-cm" min="120" max="220" value="175" required>
+                                <input type="range" id="bmr-height-cm-range" min="120" max="220" value="175">
+                            </div>
+                        </div>
+
+                        <div class="input-group bmr-metric-group" data-group="metric">
+                            <label for="bmr-weight-kg">Weight (kg)</label>
+                            <div class="input-with-range">
+                                <input type="number" id="bmr-weight-kg" min="35" max="180" value="70" required>
+                                <input type="range" id="bmr-weight-kg-range" min="35" max="180" value="70">
+                            </div>
+                        </div>
+
+                        <div class="input-grid bmr-imperial-group" data-group="imperial">
+                            <div class="input-group">
+                                <label for="bmr-height-ft">Height (ft)</label>
+                                <input type="number" id="bmr-height-ft" min="4" max="7" value="5" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="bmr-height-in">Height (in)</label>
+                                <input type="number" id="bmr-height-in" min="0" max="11" value="9" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group bmr-imperial-group" data-group="imperial">
+                            <label for="bmr-weight-lbs">Weight (lbs)</label>
+                            <input type="number" id="bmr-weight-lbs" min="80" max="440" value="165" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="bmr-age">Age (years)</label>
+                            <input type="number" id="bmr-age" min="13" max="90" value="30">
+                        </div>
+
+                        <div class="gender-select">
+                            <span>Sex at Birth</span>
+                            <div class="gender-options">
+                                <label>
+                                    <input type="radio" name="bmr-gender" value="female">
+                                    <span>Female</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="bmr-gender" value="male" checked>
+                                    <span>Male</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="bmr-gender" value="unspecified">
+                                    <span>Prefer not to say</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="activity-level">Activity Level</label>
+                            <select id="activity-level">
+                                <option value="1.2">Sedentary (little to no exercise)</option>
+                                <option value="1.375" selected>Lightly active (1–3 days/week)</option>
+                                <option value="1.55">Moderately active (3–5 days/week)</option>
+                                <option value="1.725">Very active (6–7 days/week)</option>
+                                <option value="1.9">Athlete (twice daily training)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="primary-btn">Calculate BMR</button>
+                            <button type="button" class="ghost-btn" id="bmr-reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="calculator-results">
+                    <div class="results-summary">
+                        <div class="results-gauge">
+                            <div class="gauge-circle">
+                                <div class="gauge-fill" id="bmr-gauge-fill"></div>
+                                <div class="gauge-center">
+                                    <span class="gauge-value" id="bmr-value">1650</span>
+                                    <span class="gauge-label">BMR kcal</span>
+                                </div>
+                            </div>
+                            <div class="gauge-scale">
+                                <span>Low</span>
+                                <span>Optimal</span>
+                                <span>Elevated</span>
+                                <span>High</span>
+                            </div>
+                        </div>
+                        <div class="summary-details">
+                            <div class="summary-item">
+                                <span class="summary-label">Total Daily Energy (TDEE)</span>
+                                <span class="summary-value" id="tdee-calories">2286 kcal</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Weight Management Insight</span>
+                                <span class="summary-value" id="bmr-focus">Recomposition & metabolic conditioning</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Macro Strategy</span>
+                                <span class="summary-value" id="macro-strategy">40% carbs · 30% protein · 30% fats</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-breakdown">
+                        <div class="breakdown-card">
+                            <h4>Energy Targets</h4>
+                            <ul>
+                                <li><span>Maintenance</span><strong id="maintenance-calories">2286 kcal</strong></li>
+                                <li><span>Cutting</span><strong id="cut-calories">1786 kcal (−500)</strong></li>
+                                <li><span>Lean Gain</span><strong id="bulk-calories">2536 kcal (+250)</strong></li>
+                            </ul>
+                        </div>
+                        <div class="breakdown-card">
+                            <h4>Macro Prescription</h4>
+                            <ul id="macro-breakdown">
+                                <li><span>Protein</span><strong id="macro-protein">158 g</strong></li>
+                                <li><span>Fats</span><strong id="macro-fat">76 g</strong></li>
+                                <li><span>Carbohydrates</span><strong id="macro-carb">257 g</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="results-chart">
+                        <h4>TDEE Activity Multipliers</h4>
+                        <div class="bmi-scale">
+                            <div class="bmi-scale-marker" style="--position:15%">
+                                <span>Sedentary</span>
+                                <small>1.2×</small>
+                            </div>
+                            <div class="bmi-scale-marker" style="--position:38%">
+                                <span>Light</span>
+                                <small>1.375×</small>
+                            </div>
+                            <div class="bmi-scale-marker" style="--position:58%">
+                                <span>Moderate</span>
+                                <small>1.55×</small>
+                            </div>
+                            <div class="bmi-scale-marker" style="--position:78%">
+                                <span>High</span>
+                                <small>1.725×</small>
+                            </div>
+                            <div class="bmi-scale-marker" style="--position:93%">
+                                <span>Athlete</span>
+                                <small>1.9×</small>
+                            </div>
+                            <div class="bmi-indicator" id="bmr-indicator"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-education">
+            <div class="education-grid">
+                <article class="education-card">
+                    <h3>Unlock the Power of BMR</h3>
+                    <p>
+                        Your basal metabolic rate represents the energy required to keep essential body functions running at rest.
+                        Understanding your BMR helps calibrate calories for precise body composition change.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Align caloric intake to your recovery demands</li>
+                        <li><i class="fas fa-check"></i> Ensure deficits never exceed 20% of TDEE</li>
+                        <li><i class="fas fa-check"></i> Pair with lab work for thyroid and hormonal markers</li>
+                    </ul>
+                </article>
+                <article class="education-card">
+                    <h3>Complete the Picture</h3>
+                    <p>
+                        Combine BMR with sleep metrics, stress, and training volume. Our coaches translate data into an adaptive plan that
+                        matches your lifestyle and output goals.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Sync wearables for recovery insight</li>
+                        <li><i class="fas fa-check"></i> Receive custom macro and micronutrient targets</li>
+                        <li><i class="fas fa-check"></i> Schedule accountability labs every 8–12 weeks</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="calculator-cta">
+            <div class="cta-content">
+                <h2>Need Macro Coaching and Accountability?</h2>
+                <p>
+                    Partner with Shredzone nutrition strategists to translate your BMR and lifestyle data into a repeatable, high-performance
+                    nutrition protocol.
+                </p>
+                <div class="cta-actions">
+                    <a href="services.html" class="primary-btn">Explore Nutrition Labs</a>
+                    <a href="contact.html" class="ghost-btn">Book a Metabolic Consult</a>
+                </div>
+            </div>
+            <div class="cta-visual">
+                <img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?w=600&h=500&fit=crop" alt="Meal prep and planning">
+                <div class="cta-badge">
+                    <i class="fas fa-fire"></i>
+                    <span>Performance-focused fueling</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Advanced Footer -->
+ <footer class="footer-section">
+    <div class="footer-container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <!-- Company Info -->
+            <div class="footer-column company-info">
+                <div class="footer-logo">
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>SHREDZONE</h3>
+                            <p>Enter the Zone. Leave the Excuses.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="company-description">
+                    Transform your fitness journey with cutting-edge technology, expert guidance, 
+                    and a supportive community. Join thousands who have achieved their goals with Shredzone.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column quick-links">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="footer-column products-links">
+                <h4 class="footer-title">Products</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Fitness Trackers</a></li>
+                    <li><a href="#">Protein Supplements</a></li>
+                    <li><a href="#">Strength Training</a></li>
+                    <li><a href="#">Cardio Equipment</a></li>
+                    <li><a href="#">Recovery Tools</a></li>
+                </ul>
+            </div>
+
+            <!-- Calculators -->
+            <div class="footer-column calculators-links">
+                <h4 class="footer-title">Calculators</h4>
+                <ul class="footer-links">
+                    <li><a href="bmi.html">BMI Calculator</a></li>
+                    <li><a href="bms.html">BMR Calculator</a></li>
+                    <li><a href="calories.html">Calorie Planner</a></li>
+                    <li><a href="diet.html">Diet Chart Generator</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column contact-info">
+                <h4 class="footer-title">Contact Info</h4>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span>Address</span>
+                            <p>123 Fitness Street<br>Health City, HC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span>Phone</span>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span>Email</span>
+                            <p>info@shredzone.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <span>Hours</span>
+                            <p>24/7 Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Middle -->
+        <div class="footer-middle">
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest fitness tips, product updates, and exclusive offers delivered to your inbox.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="subscribe-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2024 Shredzone. All rights reserved.</p>
+                </div>
+                <div class="footer-links-bottom">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+                <div class="payment-methods">
+                    <span>We Accept:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-stripe"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Shredzone</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Left: Logo and Brand -->
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <img src="Media/Logo.png" alt="Shredzone Logo" class="logo">
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-name">SHREDZONE</h1>
+                    <p class="brand-slogan">Enter the Zone. Leave the Excuses.</p>
+                </div>
+            </div>
+
+            <!-- Center: Navigation Menu -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="bmi.html" class="nav-link dropdown-toggle active">
+                            Calculators
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bmi.html" class="dropdown-link active">BMI Calculator</a></li>
+                            <li><a href="bms.html" class="dropdown-link">BMR Calculator</a></li>
+                            <li><a href="calories.html" class="dropdown-link">Calorie Planner</a></li>
+                            <li><a href="diet.html" class="dropdown-link">Diet Chart Generator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: Social Media Icons -->
+            <div class="nav-social">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+</nav>
+
+    <main class="calculator-page">
+        <section class="calculator-hero">
+            <div class="calculator-hero-content">
+                <span class="hero-eyebrow">Body Metrics • Instant Insights</span>
+                <h1 class="hero-title">Advanced BMI Calculator & Metabolic Insight Engine</h1>
+                <p class="hero-subtitle">
+                    Track more than a single number. Generate a precision BMI score, identify your health classification,
+                    review recommended weight ranges, and unlock tailored coaching tips based on your current metrics.
+                </p>
+                <div class="calculator-hero-actions">
+                    <a href="#bmi-calculator" class="primary-btn">Start Calculation</a>
+                    <a href="services.html#plans" class="ghost-btn">Optimize with a Coach</a>
+                </div>
+                <div class="hero-statistics">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">3.2M</span>
+                        <span class="hero-stat-label">Calculations Completed</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">40+</span>
+                        <span class="hero-stat-label">Medical Guidelines Synced</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">24/7</span>
+                        <span class="hero-stat-label">Coach Follow-up Available</span>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-hero-visual">
+                <div class="hero-visual-card">
+                    <img src="https://images.unsplash.com/photo-1600880292100-ef3ee5b4369d?w=520&h=640&fit=crop" alt="Body metrics tracking">
+                    <div class="hero-visual-overlay">
+                        <div class="overlay-badge">
+                            <span>Wellness Snapshot</span>
+                            <strong>Live BMI & Trend Forecasts</strong>
+                        </div>
+                        <ul class="overlay-features">
+                            <li><i class="fas fa-check"></i> Weekly trend tracking</li>
+                            <li><i class="fas fa-check"></i> Ideal weight range suggestions</li>
+                            <li><i class="fas fa-check"></i> Custom coaching pathways</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-section" id="bmi-calculator">
+            <div class="calculator-wrapper">
+                <div class="calculator-form">
+                    <div class="calculator-form-header">
+                        <h2>Calculate Your BMI</h2>
+                        <p>Toggle between metric and imperial units. We’ll instantly calculate your BMI and surface actionable recommendations.</p>
+                    </div>
+
+                    <form id="bmi-form">
+                        <div class="unit-toggle">
+                            <span>Measurement System</span>
+                            <div class="unit-toggle-options">
+                                <label>
+                                    <input type="radio" name="unit" value="metric" checked>
+                                    <span>Metric (cm, kg)</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="unit" value="imperial">
+                                    <span>Imperial (ft/in, lbs)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="input-group metric-group" data-group="metric">
+                            <label for="height-cm">Height (cm)</label>
+                            <div class="input-with-range">
+                                <input type="number" id="height-cm" min="120" max="230" value="175" required>
+                                <input type="range" id="height-cm-range" min="120" max="230" value="175">
+                            </div>
+                        </div>
+
+                        <div class="input-group metric-group" data-group="metric">
+                            <label for="weight-kg">Weight (kg)</label>
+                            <div class="input-with-range">
+                                <input type="number" id="weight-kg" min="35" max="200" value="70" required>
+                                <input type="range" id="weight-kg-range" min="35" max="200" value="70">
+                            </div>
+                        </div>
+
+                        <div class="input-grid imperial-group" data-group="imperial">
+                            <div class="input-group">
+                                <label for="height-ft">Height (ft)</label>
+                                <input type="number" id="height-ft" min="4" max="7" value="5" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="height-in">Height (in)</label>
+                                <input type="number" id="height-in" min="0" max="11" value="9" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group imperial-group" data-group="imperial">
+                            <label for="weight-lbs">Weight (lbs)</label>
+                            <input type="number" id="weight-lbs" min="80" max="440" value="165" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="age">Age (years)</label>
+                            <input type="number" id="age" min="13" max="90" value="30">
+                        </div>
+
+                        <div class="gender-select">
+                            <span>Sex at Birth</span>
+                            <div class="gender-options">
+                                <label>
+                                    <input type="radio" name="gender" value="female">
+                                    <span>Female</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="gender" value="male" checked>
+                                    <span>Male</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="gender" value="unspecified">
+                                    <span>Prefer not to say</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="primary-btn">Calculate BMI</button>
+                            <button type="button" class="ghost-btn" id="bmi-reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="calculator-results">
+                    <div class="results-summary">
+                        <div class="results-gauge">
+                            <div class="gauge-circle">
+                                <div class="gauge-fill" id="bmi-gauge-fill"></div>
+                                <div class="gauge-center">
+                                    <span class="gauge-value" id="bmi-value">22.9</span>
+                                    <span class="gauge-label">BMI</span>
+                                </div>
+                            </div>
+                            <div class="gauge-scale">
+                                <span>Underweight</span>
+                                <span>Healthy</span>
+                                <span>Overweight</span>
+                                <span>Obesity</span>
+                            </div>
+                        </div>
+                        <div class="summary-details">
+                            <div class="summary-item">
+                                <span class="summary-label">Classification</span>
+                                <span class="summary-value" id="bmi-classification">Healthy</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Healthy Weight Range</span>
+                                <span class="summary-value" id="ideal-weight-range">61 – 82 kg</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Recommended Focus</span>
+                                <span class="summary-value" id="focus-recommendation">Maintain or lean mass gain</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-breakdown">
+                        <div class="breakdown-card">
+                            <h4>Metabolic Snapshot</h4>
+                            <ul>
+                                <li><span>Weight Difference</span><strong id="weight-delta">+0.0 kg from midpoint</strong></li>
+                                <li><span>Suggested Daily Deficit/Surplus</span><strong id="calorie-adjustment">+0 kcal</strong></li>
+                                <li><span>Target Weekly Change</span><strong id="target-weekly-change">0.0 kg/week</strong></li>
+                            </ul>
+                        </div>
+                        <div class="breakdown-card">
+                            <h4>Shredzone Guidance</h4>
+                            <ul id="coaching-tips">
+                                <li>Strength train 3x weekly with progressive overload.</li>
+                                <li>Prioritize 1.6–2.2 g protein/kg bodyweight daily.</li>
+                                <li>Sleep 7.5+ hours and monitor HRV trends weekly.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="results-chart">
+                        <h4>BMI Reference Scale</h4>
+                        <div class="bmi-scale">
+                            <div class="bmi-scale-marker" style="--position:10%">
+                                <span>Underweight</span>
+                                <small>&lt; 18.5</small>
+                            </div>
+                            <div class="bmi-scale-marker" style="--position:35%">
+                                <span>Healthy</span>
+                                <small>18.5 - 24.9</small>
+                            </div>
+                            <div class="bmi-scale-marker" style="--position:65%">
+                                <span>Overweight</span>
+                                <small>25 - 29.9</small>
+                            </div>
+                            <div class="bmi-scale-marker" style="--position:90%">
+                                <span>Obesity</span>
+                                <small>30+</small>
+                            </div>
+                            <div class="bmi-indicator" id="bmi-indicator"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-education">
+            <div class="education-grid">
+                <article class="education-card">
+                    <h3>When BMI Works Best</h3>
+                    <p>
+                        BMI is a quick screening tool for most adults. It correlates strongly with metabolic risk when combined with waist
+                        circumference, activity level, and blood panels.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> General wellness and medical screenings</li>
+                        <li><i class="fas fa-check"></i> Corporate wellness and health risk assessments</li>
+                        <li><i class="fas fa-check"></i> Population-level research and case management</li>
+                    </ul>
+                </article>
+                <article class="education-card">
+                    <h3>When BMI Falls Short</h3>
+                    <p>
+                        BMI does not directly measure body composition. Athletes, pregnant clients, and those with high muscle mass need a more
+                        comprehensive evaluation.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> DEXA or InBody on-site at our lab partners</li>
+                        <li><i class="fas fa-check"></i> Caliper testing or circumference protocol</li>
+                        <li><i class="fas fa-check"></i> Blood biomarkers & metabolic testing</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="calculator-cta">
+            <div class="cta-content">
+                <h2>Need a Coach to Interpret Your Metrics?</h2>
+                <p>
+                    Our nutritionists and performance architects will review your BMI alongside lab work and wearable data, then build a
+                    complete roadmap around your lifestyle.
+                </p>
+                <div class="cta-actions">
+                    <a href="services.html" class="primary-btn">Explore Coaching Services</a>
+                    <a href="contact.html" class="ghost-btn">Talk to an Expert</a>
+                </div>
+            </div>
+            <div class="cta-visual">
+                <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&h=500&fit=crop" alt="Nutrition consultation">
+                <div class="cta-badge">
+                    <i class="fas fa-heart"></i>
+                    <span>Personalized wellness plans</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Advanced Footer -->
+ <footer class="footer-section">
+    <div class="footer-container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <!-- Company Info -->
+            <div class="footer-column company-info">
+                <div class="footer-logo">
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>SHREDZONE</h3>
+                            <p>Enter the Zone. Leave the Excuses.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="company-description">
+                    Transform your fitness journey with cutting-edge technology, expert guidance, 
+                    and a supportive community. Join thousands who have achieved their goals with Shredzone.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column quick-links">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="footer-column products-links">
+                <h4 class="footer-title">Products</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Fitness Trackers</a></li>
+                    <li><a href="#">Protein Supplements</a></li>
+                    <li><a href="#">Strength Training</a></li>
+                    <li><a href="#">Cardio Equipment</a></li>
+                    <li><a href="#">Recovery Tools</a></li>
+                </ul>
+            </div>
+
+            <!-- Calculators -->
+            <div class="footer-column calculators-links">
+                <h4 class="footer-title">Calculators</h4>
+                <ul class="footer-links">
+                    <li><a href="bmi.html">BMI Calculator</a></li>
+                    <li><a href="bms.html">BMR Calculator</a></li>
+                    <li><a href="calories.html">Calorie Planner</a></li>
+                    <li><a href="diet.html">Diet Chart Generator</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column contact-info">
+                <h4 class="footer-title">Contact Info</h4>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span>Address</span>
+                            <p>123 Fitness Street<br>Health City, HC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span>Phone</span>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span>Email</span>
+                            <p>info@shredzone.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <span>Hours</span>
+                            <p>24/7 Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Middle -->
+        <div class="footer-middle">
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest fitness tips, product updates, and exclusive offers delivered to your inbox.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="subscribe-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2024 Shredzone. All rights reserved.</p>
+                </div>
+                <div class="footer-links-bottom">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+                <div class="payment-methods">
+                    <span>We Accept:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-stripe"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="Script.js"></script>
+</body>
+</html>

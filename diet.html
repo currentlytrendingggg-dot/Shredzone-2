@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Shredzone</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Left: Logo and Brand -->
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <img src="Media/Logo.png" alt="Shredzone Logo" class="logo">
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-name">SHREDZONE</h1>
+                    <p class="brand-slogan">Enter the Zone. Leave the Excuses.</p>
+                </div>
+            </div>
+
+            <!-- Center: Navigation Menu -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="bmi.html" class="nav-link dropdown-toggle active">
+                            Calculators
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bmi.html" class="dropdown-link">BMI Calculator</a></li>
+                            <li><a href="bms.html" class="dropdown-link">BMR Calculator</a></li>
+                            <li><a href="calories.html" class="dropdown-link">Calorie Planner</a></li>
+                            <li><a href="diet.html" class="dropdown-link active">Diet Chart Generator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: Social Media Icons -->
+            <div class="nav-social">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+</nav>
+
+    <main class="diet-page">
+        <section class="calculator-hero">
+            <div class="calculator-hero-content">
+                <span class="hero-eyebrow">Nutrition Architecture • Precision Meal Design</span>
+                <h1 class="hero-title">AI-Assisted Diet Chart Generator & Adaptive Meal Planner</h1>
+                <p class="hero-subtitle">
+                    Enter your goals, lifestyle, and food preferences to instantly generate a periodized meal plan. The Shredzone diet engine
+                    aligns macros, micros, and meal timing so you fuel every training block with confidence.
+                </p>
+                <div class="calculator-hero-actions">
+                    <a href="#diet-generator" class="primary-btn">Build My Diet Chart</a>
+                    <a href="services.html#plans" class="ghost-btn">Work With a Nutrition Architect</a>
+                </div>
+                <div class="hero-statistics">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">2.8M</span>
+                        <span class="hero-stat-label">Meal Plans Generated</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">7</span>
+                        <span class="hero-stat-label">Lifestyle Modes Supported</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">96%</span>
+                        <span class="hero-stat-label">Client Compliance with Shredzone Plans</span>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-hero-visual">
+                <div class="hero-visual-card">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=520&h=640&fit=crop" alt="Healthy meal prep">
+                    <div class="hero-visual-overlay">
+                        <div class="overlay-badge">
+                            <span>Meal Blueprint</span>
+                            <strong>Personalized Diet Chart & Grocery Map</strong>
+                        </div>
+                        <ul class="overlay-features">
+                            <li><i class="fas fa-check"></i> Macro-aligned recipes & swaps</li>
+                            <li><i class="fas fa-check"></i> Grocery lists by aisle & delivery</li>
+                            <li><i class="fas fa-check"></i> Weekly refeed & recovery cues</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="diet-generator" id="diet-generator">
+            <div class="generator-wrapper">
+                <div class="generator-form">
+                    <div class="calculator-form-header">
+                        <h2>Plan Inputs</h2>
+                        <p>We blend your stats with Shredzone nutrition heuristics to craft a weekly roadmap. Update any variable to regenerate instantly.</p>
+                    </div>
+
+                    <form id="diet-form">
+                        <div class="input-grid">
+                            <div class="input-group">
+                                <label for="diet-age">Age (years)</label>
+                                <input type="number" id="diet-age" min="13" max="90" value="30" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="diet-gender">Sex at Birth</label>
+                                <select id="diet-gender">
+                                    <option value="female">Female</option>
+                                    <option value="male" selected>Male</option>
+                                    <option value="unspecified">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-grid">
+                            <div class="input-group">
+                                <label for="diet-height">Height (cm)</label>
+                                <input type="number" id="diet-height" min="140" max="220" value="175" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="diet-weight">Current Weight (kg)</label>
+                                <input type="number" id="diet-weight" min="35" max="200" value="75" required>
+                            </div>
+                        </div>
+
+                        <div class="input-grid">
+                            <div class="input-group">
+                                <label for="diet-goal-weight">Goal Weight (kg)</label>
+                                <input type="number" id="diet-goal-weight" min="35" max="200" value="70" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="diet-timeframe">Goal Timeframe</label>
+                                <select id="diet-timeframe">
+                                    <option value="8">8 weeks</option>
+                                    <option value="12" selected>12 weeks</option>
+                                    <option value="16">16 weeks</option>
+                                    <option value="24">24 weeks</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="diet-activity">Training Load</label>
+                            <select id="diet-activity">
+                                <option value="1.2">Sedentary / Rehab</option>
+                                <option value="1.375">Light training (2–3 sessions)</option>
+                                <option value="1.55" selected>Hybrid training (4–5 sessions)</option>
+                                <option value="1.725">High performance (6+ sessions)</option>
+                                <option value="1.9">Competitive / Two-a-days</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="diet-preference">Primary Food Preference</label>
+                            <select id="diet-preference">
+                                <option value="balanced" selected>Balanced Omni</option>
+                                <option value="vegetarian">Vegetarian</option>
+                                <option value="vegan">Vegan</option>
+                                <option value="pescatarian">Pescatarian</option>
+                                <option value="mediterranean">Mediterranean</option>
+                                <option value="lowcarb">Lower Carb / Paleo</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="diet-restrictions">Allergies & Restrictions</label>
+                            <input type="text" id="diet-restrictions" placeholder="e.g. dairy-free, gluten-free, no shellfish">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="diet-meals">Meals Per Day</label>
+                            <select id="diet-meals">
+                                <option value="3" selected>3 meals</option>
+                                <option value="4">4 meals</option>
+                                <option value="5">5 meals</option>
+                                <option value="6">6 meals</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="diet-snacks">Snacks / Shakes</label>
+                            <select id="diet-snacks">
+                                <option value="0">No snacks</option>
+                                <option value="1" selected>1 snack</option>
+                                <option value="2">2 snacks</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="diet-style">Plan Type</label>
+                            <select id="diet-style">
+                                <option value="performance" selected>Performance & Recovery</option>
+                                <option value="fatloss">Accelerated Fat Loss</option>
+                                <option value="leanmass">Lean Mass Gain</option>
+                                <option value="wellness">Lifestyle Wellness</option>
+                            </select>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="primary-btn">Generate Diet Chart</button>
+                            <button type="button" class="ghost-btn" id="diet-reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="generator-results">
+                    <div class="results-summary">
+                        <div class="results-gauge">
+                            <div class="gauge-circle">
+                                <div class="gauge-fill" id="diet-gauge-fill"></div>
+                                <div class="gauge-center">
+                                    <span class="gauge-value" id="diet-calorie-target">2200</span>
+                                    <span class="gauge-label">Daily kcal</span>
+                                </div>
+                            </div>
+                            <div class="gauge-scale">
+                                <span>Deficit</span>
+                                <span>Maintain</span>
+                                <span>Performance</span>
+                                <span>Gain</span>
+                            </div>
+                        </div>
+                        <div class="summary-details">
+                            <div class="summary-item">
+                                <span class="summary-label">Macro Blueprint</span>
+                                <span class="summary-value" id="diet-macro-summary">45% carbs · 30% protein · 25% fats</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Weekly Weight Change</span>
+                                <span class="summary-value" id="diet-weekly-change">−0.45 kg</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Meal Timing Focus</span>
+                                <span class="summary-value" id="diet-meal-timing">Fuel around training windows</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="results-breakdown">
+                        <div class="breakdown-card">
+                            <h4>Daily Macro Targets</h4>
+                            <ul id="diet-macro-breakdown">
+                                <li><span>Protein</span><strong id="diet-protein">165 g</strong></li>
+                                <li><span>Fats</span><strong id="diet-fat">61 g</strong></li>
+                                <li><span>Carbohydrates</span><strong id="diet-carb">248 g</strong></li>
+                                <li><span>Fiber</span><strong id="diet-fiber">32 g</strong></li>
+                            </ul>
+                        </div>
+                        <div class="breakdown-card">
+                            <h4>Hydration & Recovery</h4>
+                            <ul id="diet-hydration">
+                                <li><span>Daily Fluids</span><strong id="diet-fluids">3.0 L</strong></li>
+                                <li><span>Electrolytes</span><strong id="diet-electro">2 servings</strong></li>
+                                <li><span>Sleep & Recovery</span><strong id="diet-recovery">7.5 hrs + mobility</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="meal-plan">
+                        <header class="meal-plan-header">
+                            <h4>7-Day Diet Chart</h4>
+                            <p id="diet-plan-summary">Balanced omnivore plan with performance focus. Rotate meals to stay on track and avoid palate fatigue.</p>
+                        </header>
+                        <div class="meal-plan-grid" id="meal-plan-grid"></div>
+                    </div>
+
+                    <div class="results-chart">
+                        <h4>Grocery & Prep Overview</h4>
+                        <div class="weekly-grid" id="diet-grocery-grid">
+                            <div class="weekly-card">
+                                <span>Weekly Grocery Estimate</span>
+                                <strong id="diet-grocery-cost">$95 – $110</strong>
+                            </div>
+                            <div class="weekly-card">
+                                <span>Prep Sessions</span>
+                                <strong id="diet-prep-sessions">2 x 45 minutes</strong>
+                            </div>
+                            <div class="weekly-card">
+                                <span>Key Supplements</span>
+                                <strong id="diet-supplements">Whey, Omega-3, Vitamin D</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-education">
+            <div class="education-grid">
+                <article class="education-card">
+                    <h3>Periodize Your Nutrition</h3>
+                    <p>Shift macros and calorie targets every 4–6 weeks to keep your metabolism adaptive and support training phases.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Align refeeds and diet breaks with deload weeks</li>
+                        <li><i class="fas fa-check"></i> Track biofeedback to keep stress hormones in check</li>
+                        <li><i class="fas fa-check"></i> Integrate lab panels for micronutrient precision</li>
+                    </ul>
+                </article>
+                <article class="education-card">
+                    <h3>Stack Habits with Data</h3>
+                    <p>Combine our diet engine with Shredzone coaching for weekly accountability, grocery support, and lifestyle upgrades.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Wearable data sync for recovery & readiness</li>
+                        <li><i class="fas fa-check"></i> Automated grocery delivery integrations</li>
+                        <li><i class="fas fa-check"></i> Recipe swaps and culinary coaching</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="calculator-cta">
+            <div class="cta-content">
+                <h2>Want Concierge-Level Nutrition Support?</h2>
+                <p>
+                    Our team will monitor your biometrics, adjust macros weekly, and coordinate meal prep services so you stay locked on your goals.
+                </p>
+                <div class="cta-actions">
+                    <a href="services.html" class="primary-btn">Start a Nutrition Lab</a>
+                    <a href="contact.html" class="ghost-btn">Talk to a Coach</a>
+                </div>
+            </div>
+            <div class="cta-visual">
+                <img src="https://images.unsplash.com/photo-1506086679525-9f0ef7701f86?w=600&h=500&fit=crop" alt="Coach with client reviewing diet plan">
+                <div class="cta-badge">
+                    <i class="fas fa-seedling"></i>
+                    <span>Habit-focused coaching</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Advanced Footer -->
+ <footer class="footer-section">
+    <div class="footer-container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <!-- Company Info -->
+            <div class="footer-column company-info">
+                <div class="footer-logo">
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>SHREDZONE</h3>
+                            <p>Enter the Zone. Leave the Excuses.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="company-description">
+                    Transform your fitness journey with cutting-edge technology, expert guidance, 
+                    and a supportive community. Join thousands who have achieved their goals with Shredzone.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column quick-links">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="footer-column products-links">
+                <h4 class="footer-title">Products</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Fitness Trackers</a></li>
+                    <li><a href="#">Protein Supplements</a></li>
+                    <li><a href="#">Strength Training</a></li>
+                    <li><a href="#">Cardio Equipment</a></li>
+                    <li><a href="#">Recovery Tools</a></li>
+                </ul>
+            </div>
+
+            <!-- Calculators -->
+            <div class="footer-column calculators-links">
+                <h4 class="footer-title">Calculators</h4>
+                <ul class="footer-links">
+                    <li><a href="bmi.html">BMI Calculator</a></li>
+                    <li><a href="bms.html">BMR Calculator</a></li>
+                    <li><a href="calories.html">Calorie Planner</a></li>
+                    <li><a href="diet.html">Diet Chart Generator</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column contact-info">
+                <h4 class="footer-title">Contact Info</h4>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span>Address</span>
+                            <p>123 Fitness Street<br>Health City, HC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span>Phone</span>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span>Email</span>
+                            <p>info@shredzone.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <span>Hours</span>
+                            <p>24/7 Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Middle -->
+        <div class="footer-middle">
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest fitness tips, product updates, and exclusive offers delivered to your inbox.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="subscribe-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2024 Shredzone. All rights reserved.</p>
+                </div>
+                <div class="footer-links-bottom">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+                <div class="payment-methods">
+                    <span>We Accept:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-stripe"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="Script.js"></script>
+</body>
+</html>
